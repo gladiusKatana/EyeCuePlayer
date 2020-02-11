@@ -10,6 +10,10 @@
 		063D7B9423F245FD00758D82 /* EyeCuePlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 063D7B9223F245FD00758D82 /* EyeCuePlayer.xcdatamodeld */; };
 		063D7B9623F245FE00758D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063D7B9523F245FE00758D82 /* Assets.xcassets */; };
 		063D7B9923F245FE00758D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063D7B9723F245FE00758D82 /* LaunchScreen.storyboard */; };
+		063D7BA423F2470600758D82 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA023F2470600758D82 /* Notes.swift */; };
+		063D7BA523F2470600758D82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA123F2470600758D82 /* AppDelegate.swift */; };
+		063D7BA623F2470600758D82 /* AppLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA223F2470600758D82 /* AppLifecycle.swift */; };
+		063D7BA723F2470600758D82 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA323F2470600758D82 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +22,10 @@
 		063D7B9523F245FE00758D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		063D7B9823F245FE00758D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		063D7B9A23F245FE00758D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063D7BA023F2470600758D82 /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Notes.swift; path = EyeCuePlayer/Notes.swift; sourceTree = "<group>"; };
+		063D7BA123F2470600758D82 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = EyeCuePlayer/AppDelegate.swift; sourceTree = "<group>"; };
+		063D7BA223F2470600758D82 /* AppLifecycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppLifecycle.swift; path = EyeCuePlayer/AppLifecycle.swift; sourceTree = "<group>"; };
+		063D7BA323F2470600758D82 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = EyeCuePlayer/Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +42,10 @@
 		063D7B7D23F245FD00758D82 = {
 			isa = PBXGroup;
 			children = (
+				063D7BA123F2470600758D82 /* AppDelegate.swift */,
+				063D7BA223F2470600758D82 /* AppLifecycle.swift */,
+				063D7BA323F2470600758D82 /* Extensions.swift */,
+				063D7BA023F2470600758D82 /* Notes.swift */,
 				063D7B8823F245FD00758D82 /* EyeCuePlayer */,
 				063D7B8723F245FD00758D82 /* Products */,
 			);
@@ -90,6 +102,7 @@
 				TargetAttributes = {
 					063D7B8523F245FD00758D82 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -128,7 +141,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063D7BA723F2470600758D82 /* Extensions.swift in Sources */,
+				063D7BA523F2470600758D82 /* AppDelegate.swift in Sources */,
 				063D7B9423F245FD00758D82 /* EyeCuePlayer.xcdatamodeld in Sources */,
+				063D7BA623F2470600758D82 /* AppLifecycle.swift in Sources */,
+				063D7BA423F2470600758D82 /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KX84NTAHJ6;
 				INFOPLIST_FILE = EyeCuePlayer/Info.plist;
@@ -273,6 +291,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.EyeCuePlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -282,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KX84NTAHJ6;
 				INFOPLIST_FILE = EyeCuePlayer/Info.plist;
