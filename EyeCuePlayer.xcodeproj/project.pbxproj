@@ -14,6 +14,11 @@
 		063D7BA523F2470600758D82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA123F2470600758D82 /* AppDelegate.swift */; };
 		063D7BA623F2470600758D82 /* AppLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA223F2470600758D82 /* AppLifecycle.swift */; };
 		063D7BA723F2470600758D82 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA323F2470600758D82 /* Extensions.swift */; };
+		063D7BAE23F2479D00758D82 /* CoreVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA923F2479D00758D82 /* CoreVars.swift */; };
+		063D7BAF23F2479D00758D82 /* ControlVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAA23F2479D00758D82 /* ControlVars.swift */; };
+		063D7BB023F2479D00758D82 /* MediaVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAB23F2479D00758D82 /* MediaVars.swift */; };
+		063D7BB123F2479D00758D82 /* GlobalFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */; };
+		063D7BB223F2479D00758D82 /* Colours&Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAD23F2479D00758D82 /* Colours&Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		063D7BA123F2470600758D82 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = EyeCuePlayer/AppDelegate.swift; sourceTree = "<group>"; };
 		063D7BA223F2470600758D82 /* AppLifecycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppLifecycle.swift; path = EyeCuePlayer/AppLifecycle.swift; sourceTree = "<group>"; };
 		063D7BA323F2470600758D82 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = EyeCuePlayer/Extensions.swift; sourceTree = "<group>"; };
+		063D7BA923F2479D00758D82 /* CoreVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreVars.swift; sourceTree = "<group>"; };
+		063D7BAA23F2479D00758D82 /* ControlVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlVars.swift; sourceTree = "<group>"; };
+		063D7BAB23F2479D00758D82 /* MediaVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVars.swift; sourceTree = "<group>"; };
+		063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFuncs.swift; sourceTree = "<group>"; };
+		063D7BAD23F2479D00758D82 /* Colours&Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colours&Images.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 		063D7B7D23F245FD00758D82 = {
 			isa = PBXGroup;
 			children = (
+				063D7BA823F2479D00758D82 /* Globals */,
 				063D7BA123F2470600758D82 /* AppDelegate.swift */,
 				063D7BA223F2470600758D82 /* AppLifecycle.swift */,
 				063D7BA323F2470600758D82 /* Extensions.swift */,
@@ -68,6 +79,19 @@
 				063D7B9223F245FD00758D82 /* EyeCuePlayer.xcdatamodeld */,
 			);
 			path = EyeCuePlayer;
+			sourceTree = "<group>";
+		};
+		063D7BA823F2479D00758D82 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BA923F2479D00758D82 /* CoreVars.swift */,
+				063D7BAA23F2479D00758D82 /* ControlVars.swift */,
+				063D7BAB23F2479D00758D82 /* MediaVars.swift */,
+				063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */,
+				063D7BAD23F2479D00758D82 /* Colours&Images.swift */,
+			);
+			name = Globals;
+			path = EyeCuePlayer/Globals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +169,12 @@
 				063D7BA523F2470600758D82 /* AppDelegate.swift in Sources */,
 				063D7B9423F245FD00758D82 /* EyeCuePlayer.xcdatamodeld in Sources */,
 				063D7BA623F2470600758D82 /* AppLifecycle.swift in Sources */,
+				063D7BAF23F2479D00758D82 /* ControlVars.swift in Sources */,
+				063D7BAE23F2479D00758D82 /* CoreVars.swift in Sources */,
+				063D7BB223F2479D00758D82 /* Colours&Images.swift in Sources */,
+				063D7BB023F2479D00758D82 /* MediaVars.swift in Sources */,
 				063D7BA423F2470600758D82 /* Notes.swift in Sources */,
+				063D7BB123F2479D00758D82 /* GlobalFuncs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
