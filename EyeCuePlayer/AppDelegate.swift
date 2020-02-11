@@ -1,53 +1,79 @@
-//
-//  AppDelegate.swift
-//  EyeCuePlayer
-//
-//  Created by Garth Snyder on 2020-02-10.
-//  Copyright © 2020 Garth Snyder. All rights reserved.
-//
+// eyeCuePlayer ･ AppDelegate.swift
+import UIKit;  import CoreData              //; var statusBar = UIView()
 
-import UIKit
-import CoreData
-
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+@UIApplicationMain class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+    lazy var orientationLock = UIInterfaceOrientationMask.all           /// set orientations you want to be allowed in this property by default
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return orientationLock
+    }
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = icyBlue
+        window?.makeKeyAndVisible()
+        globalWindow = window!
+        
+        if statusBarUIView!.responds(to:#selector(setter: UIView.backgroundColor)) {
+            statusBarUIView!.backgroundColor = .clear
+        }
+        
+        UINavigationBar.appearance().barTintColor = icyBlue //.white //defaultColour //uiBarsColor
+        UINavigationBar.appearance().shadowImage = UIImage()
+        
         return true
     }
+    
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+        let layout = UICollectionViewFlowLayout()  //; layout.scrollDirection = .horizontal
+        
+        window?.rootViewController = UINavigationController(rootViewController: HomeVC(collectionViewLayout: layout))
+        ///UINavigationController(rootViewController: UploadController())
+        
+        return true
     }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    
+    var statusBarUIView: UIView? {
+        if #available(iOS 13.0, *) {
+            let tag = 38482458385
+            if let statusBar = globalWindow.viewWithTag(tag) {
+                return statusBar
+            } else {
+                ///let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)   // deprecated
+                let statusBarView = UIView(frame: (globalWindow.windowScene?.statusBarManager!.statusBarFrame)!)
+                statusBarView.tag = tag
+                globalWindow.addSubview(statusBarView)
+                return statusBarView
+            }
+        } else if responds(to: Selector(("statusBar"))) {
+            return value(forKey: "statusBar") as? UIView
+        } else {return nil}
     }
-
-    // MARK: - Core Data stack
-
+    
+    
+    // MARK:  // Core Data stack  // ******************************************************************************************************
+    /**************************************************************************************************************************/
+    /****************************************************************************************************************/
+    /******************************************************************************************************/
+    
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
-        */
+         */
         let container = NSPersistentContainer(name: "EyeCuePlayer")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
+                
                 /*
                  Typical reasons for an error here include:
                  * The parent directory does not exist, cannot be created, or disallows writing.
@@ -61,9 +87,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
         return container
     }()
-
+    
     // MARK: - Core Data Saving support
-
+    
     func saveContext () {
         let context = persistentContainer.viewContext
         if context.hasChanges {
@@ -77,6 +103,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+}
 
+struct AppUtility {
+    static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
+        
+        if let delgat = UIApplication.shared.delegate as? AppDelegate {
+            delgat.orientationLock = orientation
+        }
+    }
+    
+    /// OPTIONAL Added method to adjust lock and rotate to the desired orientation
+    static func lockOrientation(_ orientation: UIInterfaceOrientationMask, andRotateTo rotateOrientation:UIInterfaceOrientation) {
+        
+        self.lockOrientation(orientation)
+        UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
+    }
 }
 
