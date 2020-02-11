@@ -30,6 +30,60 @@
 		063D7BC823F2484A00758D82 /* TapFCellButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BBD23F2484A00758D82 /* TapFCellButtons.swift */; };
 		063D7BC923F2484A00758D82 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BBE23F2484A00758D82 /* FeedCell.swift */; };
 		063D7BCA23F2484A00758D82 /* TapFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BBF23F2484A00758D82 /* TapFeedCell.swift */; };
+		063D7C0E23F248F200758D82 /* CachedImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BCC23F248F100758D82 /* CachedImgView.swift */; };
+		063D7C0F23F248F200758D82 /* SaveDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BCD23F248F100758D82 /* SaveDocument.swift */; };
+		063D7C1023F248F200758D82 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BCF23F248F100758D82 /* APIService.swift */; };
+		063D7C1123F248F200758D82 /* Feeds1toN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BD023F248F100758D82 /* Feeds1toN.swift */; };
+		063D7C1223F248F200758D82 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BD123F248F100758D82 /* Video.swift */; };
+		063D7C1323F248F200758D82 /* SliderTimer(CurrentlyInactive).swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BD323F248F100758D82 /* SliderTimer(CurrentlyInactive).swift */; };
+		063D7C1423F248F200758D82 /* Timer(CurrentlyInactive).swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BD423F248F100758D82 /* Timer(CurrentlyInactive).swift */; };
+		063D7C1523F248F200758D82 /* SlowMoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BD523F248F100758D82 /* SlowMoController.swift */; };
+		063D7C1623F248F200758D82 /* InactiveVisuals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BD623F248F100758D82 /* InactiveVisuals.swift */; };
+		063D7C1723F248F200758D82 /* MessageUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BD923F248F100758D82 /* MessageUI.swift */; };
+		063D7C1823F248F200758D82 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BDA23F248F100758D82 /* MessageVC.swift */; };
+		063D7C1923F248F200758D82 /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BDB23F248F100758D82 /* Transitions.swift */; };
+		063D7C1A23F248F200758D82 /* TransVisuals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BDC23F248F100758D82 /* TransVisuals.swift */; };
+		063D7C1B23F248F200758D82 /* Tap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BDE23F248F100758D82 /* Tap.swift */; };
+		063D7C1C23F248F200758D82 /* SlideSeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BDF23F248F100758D82 /* SlideSeek.swift */; };
+		063D7C1D23F248F200758D82 /* SwipeRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BE023F248F100758D82 /* SwipeRight.swift */; };
+		063D7C1E23F248F200758D82 /* SwipeLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BE123F248F100758D82 /* SwipeLeft.swift */; };
+		063D7C1F23F248F200758D82 /* Pinch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BE223F248F100758D82 /* Pinch.swift */; };
+		063D7C2023F248F200758D82 /* LongPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BE323F248F100758D82 /* LongPress.swift */; };
+		063D7C2123F248F200758D82 /* SwipeVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BE423F248F100758D82 /* SwipeVertical.swift */; };
+		063D7C2223F248F200758D82 /* AddGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BE523F248F100758D82 /* AddGestures.swift */; };
+		063D7C2323F248F200758D82 /* TapToConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BE723F248F100758D82 /* TapToConvert.swift */; };
+		063D7C2423F248F200758D82 /* Calibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BE823F248F100758D82 /* Calibrate.swift */; };
+		063D7C2523F248F200758D82 /* PixelDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BE923F248F100758D82 /* PixelDetector.swift */; };
+		063D7C2623F248F200758D82 /* Cleanup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BEA23F248F100758D82 /* Cleanup.swift */; };
+		063D7C2723F248F200758D82 /* SlideCalibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BEB23F248F100758D82 /* SlideCalibrate.swift */; };
+		063D7C2823F248F200758D82 /* SliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BED23F248F100758D82 /* SliderController.swift */; };
+		063D7C2923F248F200758D82 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BEE23F248F100758D82 /* VideoVC.swift */; };
+		063D7C2A23F248F200758D82 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BEF23F248F100758D82 /* VideoPlayerView.swift */; };
+		063D7C2B23F248F200758D82 /* VideoViewSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BF023F248F100758D82 /* VideoViewSetup.swift */; };
+		063D7C2C23F248F200758D82 /* Latch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BF223F248F100758D82 /* Latch.swift */; };
+		063D7C2D23F248F200758D82 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BF323F248F100758D82 /* Timer.swift */; };
+		063D7C2E23F248F200758D82 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BF423F248F100758D82 /* Sounds.swift */; };
+		063D7C2F23F248F200758D82 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BF523F248F100758D82 /* PlayButton.swift */; };
+		063D7C3023F248F200758D82 /* Prints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BF623F248F100758D82 /* Prints.swift */; };
+		063D7C3123F248F200758D82 /* Corrections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BF723F248F100758D82 /* Corrections.swift */; };
+		063D7C3223F248F200758D82 /* PlayBackwards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BF923F248F100758D82 /* PlayBackwards.swift */; };
+		063D7C3323F248F200758D82 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BFA23F248F100758D82 /* Parameters.swift */; };
+		063D7C3423F248F200758D82 /* Seek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BFB23F248F100758D82 /* Seek.swift */; };
+		063D7C3523F248F200758D82 /* PlayerLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BFC23F248F100758D82 /* PlayerLife.swift */; };
+		063D7C3623F248F200758D82 /* ProgBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BFD23F248F100758D82 /* ProgBar.swift */; };
+		063D7C3723F248F200758D82 /* Pause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BFE23F248F100758D82 /* Pause.swift */; };
+		063D7C3823F248F200758D82 /* PlayForward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BFF23F248F100758D82 /* PlayForward.swift */; };
+		063D7C3923F248F200758D82 /*  loadingScreen.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 063D7C0123F248F200758D82 /*  loadingScreen.m4v */; };
+		063D7C3A23F248F200758D82 /* Funk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 063D7C0223F248F200758D82 /* Funk.mp3 */; };
+		063D7C3B23F248F200758D82 /* AltSettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0423F248F200758D82 /* AltSettingsPanel.swift */; };
+		063D7C3C23F248F200758D82 /* SettingsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0523F248F200758D82 /* SettingsPanel.swift */; };
+		063D7C3D23F248F200758D82 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0723F248F200758D82 /* SettingsView.swift */; };
+		063D7C3E23F248F200758D82 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0823F248F200758D82 /* MenuBar.swift */; };
+		063D7C3F23F248F200758D82 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0923F248F200758D82 /* SliderView.swift */; };
+		063D7C4023F248F200758D82 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0A23F248F200758D82 /* Settings.swift */; };
+		063D7C4123F248F200758D82 /* SettingsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0B23F248F200758D82 /* SettingsSetup.swift */; };
+		063D7C4223F248F200758D82 /* MenuTap&HBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0C23F248F200758D82 /* MenuTap&HBar.swift */; };
+		063D7C4323F248F200758D82 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0D23F248F200758D82 /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +112,60 @@
 		063D7BBD23F2484A00758D82 /* TapFCellButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapFCellButtons.swift; sourceTree = "<group>"; };
 		063D7BBE23F2484A00758D82 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		063D7BBF23F2484A00758D82 /* TapFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapFeedCell.swift; sourceTree = "<group>"; };
+		063D7BCC23F248F100758D82 /* CachedImgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedImgView.swift; sourceTree = "<group>"; };
+		063D7BCD23F248F100758D82 /* SaveDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveDocument.swift; sourceTree = "<group>"; };
+		063D7BCF23F248F100758D82 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		063D7BD023F248F100758D82 /* Feeds1toN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feeds1toN.swift; sourceTree = "<group>"; };
+		063D7BD123F248F100758D82 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		063D7BD323F248F100758D82 /* SliderTimer(CurrentlyInactive).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SliderTimer(CurrentlyInactive).swift"; sourceTree = "<group>"; };
+		063D7BD423F248F100758D82 /* Timer(CurrentlyInactive).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer(CurrentlyInactive).swift"; sourceTree = "<group>"; };
+		063D7BD523F248F100758D82 /* SlowMoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlowMoController.swift; sourceTree = "<group>"; };
+		063D7BD623F248F100758D82 /* InactiveVisuals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InactiveVisuals.swift; sourceTree = "<group>"; };
+		063D7BD923F248F100758D82 /* MessageUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageUI.swift; sourceTree = "<group>"; };
+		063D7BDA23F248F100758D82 /* MessageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		063D7BDB23F248F100758D82 /* Transitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transitions.swift; sourceTree = "<group>"; };
+		063D7BDC23F248F100758D82 /* TransVisuals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransVisuals.swift; sourceTree = "<group>"; };
+		063D7BDE23F248F100758D82 /* Tap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tap.swift; sourceTree = "<group>"; };
+		063D7BDF23F248F100758D82 /* SlideSeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideSeek.swift; sourceTree = "<group>"; };
+		063D7BE023F248F100758D82 /* SwipeRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeRight.swift; sourceTree = "<group>"; };
+		063D7BE123F248F100758D82 /* SwipeLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeLeft.swift; sourceTree = "<group>"; };
+		063D7BE223F248F100758D82 /* Pinch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pinch.swift; sourceTree = "<group>"; };
+		063D7BE323F248F100758D82 /* LongPress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPress.swift; sourceTree = "<group>"; };
+		063D7BE423F248F100758D82 /* SwipeVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeVertical.swift; sourceTree = "<group>"; };
+		063D7BE523F248F100758D82 /* AddGestures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGestures.swift; sourceTree = "<group>"; };
+		063D7BE723F248F100758D82 /* TapToConvert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapToConvert.swift; sourceTree = "<group>"; };
+		063D7BE823F248F100758D82 /* Calibrate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calibrate.swift; sourceTree = "<group>"; };
+		063D7BE923F248F100758D82 /* PixelDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelDetector.swift; sourceTree = "<group>"; };
+		063D7BEA23F248F100758D82 /* Cleanup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cleanup.swift; sourceTree = "<group>"; };
+		063D7BEB23F248F100758D82 /* SlideCalibrate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideCalibrate.swift; sourceTree = "<group>"; };
+		063D7BED23F248F100758D82 /* SliderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderController.swift; sourceTree = "<group>"; };
+		063D7BEE23F248F100758D82 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		063D7BEF23F248F100758D82 /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		063D7BF023F248F100758D82 /* VideoViewSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewSetup.swift; sourceTree = "<group>"; };
+		063D7BF223F248F100758D82 /* Latch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Latch.swift; sourceTree = "<group>"; };
+		063D7BF323F248F100758D82 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		063D7BF423F248F100758D82 /* Sounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		063D7BF523F248F100758D82 /* PlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		063D7BF623F248F100758D82 /* Prints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prints.swift; sourceTree = "<group>"; };
+		063D7BF723F248F100758D82 /* Corrections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Corrections.swift; sourceTree = "<group>"; };
+		063D7BF923F248F100758D82 /* PlayBackwards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayBackwards.swift; sourceTree = "<group>"; };
+		063D7BFA23F248F100758D82 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		063D7BFB23F248F100758D82 /* Seek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seek.swift; sourceTree = "<group>"; };
+		063D7BFC23F248F100758D82 /* PlayerLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLife.swift; sourceTree = "<group>"; };
+		063D7BFD23F248F100758D82 /* ProgBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgBar.swift; sourceTree = "<group>"; };
+		063D7BFE23F248F100758D82 /* Pause.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pause.swift; sourceTree = "<group>"; };
+		063D7BFF23F248F100758D82 /* PlayForward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayForward.swift; sourceTree = "<group>"; };
+		063D7C0123F248F200758D82 /*  loadingScreen.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = " loadingScreen.m4v"; sourceTree = "<group>"; };
+		063D7C0223F248F200758D82 /* Funk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Funk.mp3; sourceTree = "<group>"; };
+		063D7C0423F248F200758D82 /* AltSettingsPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltSettingsPanel.swift; sourceTree = "<group>"; };
+		063D7C0523F248F200758D82 /* SettingsPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPanel.swift; sourceTree = "<group>"; };
+		063D7C0723F248F200758D82 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		063D7C0823F248F200758D82 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		063D7C0923F248F200758D82 /* SliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		063D7C0A23F248F200758D82 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		063D7C0B23F248F200758D82 /* SettingsSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSetup.swift; sourceTree = "<group>"; };
+		063D7C0C23F248F200758D82 /* MenuTap&HBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuTap&HBar.swift"; sourceTree = "<group>"; };
+		063D7C0D23F248F200758D82 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +182,20 @@
 		063D7B7D23F245FD00758D82 = {
 			isa = PBXGroup;
 			children = (
-				063D7BB823F2484A00758D82 /* Cells */,
-				063D7BB323F2484A00758D82 /* HomeViewController */,
-				063D7BA823F2479D00758D82 /* Globals */,
 				063D7BA123F2470600758D82 /* AppDelegate.swift */,
 				063D7BA223F2470600758D82 /* AppLifecycle.swift */,
 				063D7BA323F2470600758D82 /* Extensions.swift */,
 				063D7BA023F2470600758D82 /* Notes.swift */,
+				063D7BD223F248F100758D82 /* inactive */,
+				063D7C0023F248F200758D82 /* Media */,
+				063D7BCE23F248F100758D82 /* Model */,
+				063D7C0323F248F200758D82 /* Settings */,
+				063D7BD723F248F100758D82 /* Video */,
+				063D7C0623F248F200758D82 /* View */,
+				063D7BCB23F248F100758D82 /* ViewModel */,
+				063D7BB823F2484A00758D82 /* Cells */,
+				063D7BB323F2484A00758D82 /* HomeViewController */,
+				063D7BA823F2479D00758D82 /* Globals */,
 				063D7B8823F245FD00758D82 /* EyeCuePlayer */,
 				063D7B8723F245FD00758D82 /* Products */,
 			);
@@ -145,6 +260,164 @@
 			path = EyeCuePlayer/Cells;
 			sourceTree = "<group>";
 		};
+		063D7BCB23F248F100758D82 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BCC23F248F100758D82 /* CachedImgView.swift */,
+				063D7BCD23F248F100758D82 /* SaveDocument.swift */,
+			);
+			name = ViewModel;
+			path = EyeCuePlayer/ViewModel;
+			sourceTree = "<group>";
+		};
+		063D7BCE23F248F100758D82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BCF23F248F100758D82 /* APIService.swift */,
+				063D7BD023F248F100758D82 /* Feeds1toN.swift */,
+				063D7BD123F248F100758D82 /* Video.swift */,
+			);
+			name = Model;
+			path = EyeCuePlayer/Model;
+			sourceTree = "<group>";
+		};
+		063D7BD223F248F100758D82 /* inactive */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BD323F248F100758D82 /* SliderTimer(CurrentlyInactive).swift */,
+				063D7BD423F248F100758D82 /* Timer(CurrentlyInactive).swift */,
+				063D7BD523F248F100758D82 /* SlowMoController.swift */,
+				063D7BD623F248F100758D82 /* InactiveVisuals.swift */,
+			);
+			name = inactive;
+			path = EyeCuePlayer/inactive;
+			sourceTree = "<group>";
+		};
+		063D7BD723F248F100758D82 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BD823F248F100758D82 /* Captions */,
+				063D7BDD23F248F100758D82 /* VideoGestures */,
+				063D7BE623F248F100758D82 /* Calibration */,
+				063D7BEC23F248F100758D82 /* Video(Core) */,
+				063D7BF123F248F100758D82 /* PlaybackAids */,
+				063D7BF823F248F100758D82 /* Playback */,
+			);
+			name = Video;
+			path = EyeCuePlayer/Video;
+			sourceTree = "<group>";
+		};
+		063D7BD823F248F100758D82 /* Captions */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BD923F248F100758D82 /* MessageUI.swift */,
+				063D7BDA23F248F100758D82 /* MessageVC.swift */,
+				063D7BDB23F248F100758D82 /* Transitions.swift */,
+				063D7BDC23F248F100758D82 /* TransVisuals.swift */,
+			);
+			path = Captions;
+			sourceTree = "<group>";
+		};
+		063D7BDD23F248F100758D82 /* VideoGestures */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BDE23F248F100758D82 /* Tap.swift */,
+				063D7BDF23F248F100758D82 /* SlideSeek.swift */,
+				063D7BE023F248F100758D82 /* SwipeRight.swift */,
+				063D7BE123F248F100758D82 /* SwipeLeft.swift */,
+				063D7BE223F248F100758D82 /* Pinch.swift */,
+				063D7BE323F248F100758D82 /* LongPress.swift */,
+				063D7BE423F248F100758D82 /* SwipeVertical.swift */,
+				063D7BE523F248F100758D82 /* AddGestures.swift */,
+			);
+			path = VideoGestures;
+			sourceTree = "<group>";
+		};
+		063D7BE623F248F100758D82 /* Calibration */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BE723F248F100758D82 /* TapToConvert.swift */,
+				063D7BE823F248F100758D82 /* Calibrate.swift */,
+				063D7BE923F248F100758D82 /* PixelDetector.swift */,
+				063D7BEA23F248F100758D82 /* Cleanup.swift */,
+				063D7BEB23F248F100758D82 /* SlideCalibrate.swift */,
+			);
+			path = Calibration;
+			sourceTree = "<group>";
+		};
+		063D7BEC23F248F100758D82 /* Video(Core) */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BED23F248F100758D82 /* SliderController.swift */,
+				063D7BEE23F248F100758D82 /* VideoVC.swift */,
+				063D7BEF23F248F100758D82 /* VideoPlayerView.swift */,
+				063D7BF023F248F100758D82 /* VideoViewSetup.swift */,
+			);
+			path = "Video(Core)";
+			sourceTree = "<group>";
+		};
+		063D7BF123F248F100758D82 /* PlaybackAids */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BF223F248F100758D82 /* Latch.swift */,
+				063D7BF323F248F100758D82 /* Timer.swift */,
+				063D7BF423F248F100758D82 /* Sounds.swift */,
+				063D7BF523F248F100758D82 /* PlayButton.swift */,
+				063D7BF623F248F100758D82 /* Prints.swift */,
+				063D7BF723F248F100758D82 /* Corrections.swift */,
+			);
+			path = PlaybackAids;
+			sourceTree = "<group>";
+		};
+		063D7BF823F248F100758D82 /* Playback */ = {
+			isa = PBXGroup;
+			children = (
+				063D7BF923F248F100758D82 /* PlayBackwards.swift */,
+				063D7BFA23F248F100758D82 /* Parameters.swift */,
+				063D7BFB23F248F100758D82 /* Seek.swift */,
+				063D7BFC23F248F100758D82 /* PlayerLife.swift */,
+				063D7BFD23F248F100758D82 /* ProgBar.swift */,
+				063D7BFE23F248F100758D82 /* Pause.swift */,
+				063D7BFF23F248F100758D82 /* PlayForward.swift */,
+			);
+			path = Playback;
+			sourceTree = "<group>";
+		};
+		063D7C0023F248F200758D82 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				063D7C0123F248F200758D82 /*  loadingScreen.m4v */,
+				063D7C0223F248F200758D82 /* Funk.mp3 */,
+			);
+			name = Media;
+			path = EyeCuePlayer/Media;
+			sourceTree = "<group>";
+		};
+		063D7C0323F248F200758D82 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				063D7C0423F248F200758D82 /* AltSettingsPanel.swift */,
+				063D7C0523F248F200758D82 /* SettingsPanel.swift */,
+			);
+			name = Settings;
+			path = EyeCuePlayer/Settings;
+			sourceTree = "<group>";
+		};
+		063D7C0623F248F200758D82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				063D7C0723F248F200758D82 /* SettingsView.swift */,
+				063D7C0823F248F200758D82 /* MenuBar.swift */,
+				063D7C0923F248F200758D82 /* SliderView.swift */,
+				063D7C0A23F248F200758D82 /* Settings.swift */,
+				063D7C0B23F248F200758D82 /* SettingsSetup.swift */,
+				063D7C0C23F248F200758D82 /* MenuTap&HBar.swift */,
+				063D7C0D23F248F200758D82 /* MessageView.swift */,
+			);
+			name = View;
+			path = EyeCuePlayer/View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,6 +479,8 @@
 			files = (
 				063D7B9923F245FE00758D82 /* LaunchScreen.storyboard in Resources */,
 				063D7B9623F245FE00758D82 /* Assets.xcassets in Resources */,
+				063D7C3A23F248F200758D82 /* Funk.mp3 in Resources */,
+				063D7C3923F248F200758D82 /*  loadingScreen.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,27 +491,79 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063D7C3523F248F200758D82 /* PlayerLife.swift in Sources */,
 				063D7BA723F2470600758D82 /* Extensions.swift in Sources */,
+				063D7C2423F248F200758D82 /* Calibrate.swift in Sources */,
+				063D7C1323F248F200758D82 /* SliderTimer(CurrentlyInactive).swift in Sources */,
+				063D7C4023F248F200758D82 /* Settings.swift in Sources */,
 				063D7BC923F2484A00758D82 /* FeedCell.swift in Sources */,
+				063D7C1E23F248F200758D82 /* SwipeLeft.swift in Sources */,
 				063D7BC023F2484A00758D82 /* HomeVCUI.swift in Sources */,
+				063D7C2C23F248F200758D82 /* Latch.swift in Sources */,
+				063D7C3023F248F200758D82 /* Prints.swift in Sources */,
+				063D7C3223F248F200758D82 /* PlayBackwards.swift in Sources */,
+				063D7C2623F248F200758D82 /* Cleanup.swift in Sources */,
 				063D7BC723F2484A00758D82 /* MenuCell.swift in Sources */,
 				063D7BA523F2470600758D82 /* AppDelegate.swift in Sources */,
 				063D7BC823F2484A00758D82 /* TapFCellButtons.swift in Sources */,
 				063D7B9423F245FD00758D82 /* EyeCuePlayer.xcdatamodeld in Sources */,
+				063D7C2123F248F200758D82 /* SwipeVertical.swift in Sources */,
+				063D7C1823F248F200758D82 /* MessageVC.swift in Sources */,
 				063D7BC223F2484A00758D82 /* HomeVC.swift in Sources */,
+				063D7C3D23F248F200758D82 /* SettingsView.swift in Sources */,
+				063D7C3B23F248F200758D82 /* AltSettingsPanel.swift in Sources */,
 				063D7BC423F2484A00758D82 /* VideoCell.swift in Sources */,
+				063D7C2F23F248F200758D82 /* PlayButton.swift in Sources */,
+				063D7C2523F248F200758D82 /* PixelDetector.swift in Sources */,
+				063D7C1223F248F200758D82 /* Video.swift in Sources */,
 				063D7BCA23F2484A00758D82 /* TapFeedCell.swift in Sources */,
+				063D7C3823F248F200758D82 /* PlayForward.swift in Sources */,
+				063D7C3E23F248F200758D82 /* MenuBar.swift in Sources */,
 				063D7BC323F2484A00758D82 /* HomeVCSetup.swift in Sources */,
+				063D7C2A23F248F200758D82 /* VideoPlayerView.swift in Sources */,
+				063D7C1523F248F200758D82 /* SlowMoController.swift in Sources */,
+				063D7C1C23F248F200758D82 /* SlideSeek.swift in Sources */,
 				063D7BC523F2484A00758D82 /* VideoCellSetup.swift in Sources */,
 				063D7BA623F2470600758D82 /* AppLifecycle.swift in Sources */,
+				063D7C4223F248F200758D82 /* MenuTap&HBar.swift in Sources */,
+				063D7C1723F248F200758D82 /* MessageUI.swift in Sources */,
 				063D7BAF23F2479D00758D82 /* ControlVars.swift in Sources */,
+				063D7C1123F248F200758D82 /* Feeds1toN.swift in Sources */,
+				063D7C2223F248F200758D82 /* AddGestures.swift in Sources */,
+				063D7C4323F248F200758D82 /* MessageView.swift in Sources */,
 				063D7BAE23F2479D00758D82 /* CoreVars.swift in Sources */,
+				063D7C1423F248F200758D82 /* Timer(CurrentlyInactive).swift in Sources */,
 				063D7BC623F2484A00758D82 /* BaseCell.swift in Sources */,
+				063D7C2323F248F200758D82 /* TapToConvert.swift in Sources */,
+				063D7C2E23F248F200758D82 /* Sounds.swift in Sources */,
+				063D7C1D23F248F200758D82 /* SwipeRight.swift in Sources */,
+				063D7C3623F248F200758D82 /* ProgBar.swift in Sources */,
+				063D7C4123F248F200758D82 /* SettingsSetup.swift in Sources */,
+				063D7C2923F248F200758D82 /* VideoVC.swift in Sources */,
 				063D7BB223F2479D00758D82 /* Colours&Images.swift in Sources */,
 				063D7BB023F2479D00758D82 /* MediaVars.swift in Sources */,
 				063D7BC123F2484A00758D82 /* HomeVCLife.swift in Sources */,
+				063D7C2723F248F200758D82 /* SlideCalibrate.swift in Sources */,
+				063D7C3323F248F200758D82 /* Parameters.swift in Sources */,
+				063D7C0F23F248F200758D82 /* SaveDocument.swift in Sources */,
+				063D7C1B23F248F200758D82 /* Tap.swift in Sources */,
 				063D7BA423F2470600758D82 /* Notes.swift in Sources */,
+				063D7C1A23F248F200758D82 /* TransVisuals.swift in Sources */,
+				063D7C3F23F248F200758D82 /* SliderView.swift in Sources */,
+				063D7C3723F248F200758D82 /* Pause.swift in Sources */,
+				063D7C3C23F248F200758D82 /* SettingsPanel.swift in Sources */,
+				063D7C2823F248F200758D82 /* SliderController.swift in Sources */,
+				063D7C1623F248F200758D82 /* InactiveVisuals.swift in Sources */,
+				063D7C0E23F248F200758D82 /* CachedImgView.swift in Sources */,
+				063D7C1923F248F200758D82 /* Transitions.swift in Sources */,
+				063D7C1023F248F200758D82 /* APIService.swift in Sources */,
+				063D7C3423F248F200758D82 /* Seek.swift in Sources */,
+				063D7C2B23F248F200758D82 /* VideoViewSetup.swift in Sources */,
 				063D7BB123F2479D00758D82 /* GlobalFuncs.swift in Sources */,
+				063D7C3123F248F200758D82 /* Corrections.swift in Sources */,
+				063D7C1F23F248F200758D82 /* Pinch.swift in Sources */,
+				063D7C2D23F248F200758D82 /* Timer.swift in Sources */,
+				063D7C2023F248F200758D82 /* LongPress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
