@@ -29,11 +29,14 @@ class VideoPlayerView: UIView {
         backgroundColor = icyBlue
         setupLoadingVideo()
         
-        addPlayorToView(link: selectedVideoLink)    ///setupHardPlayer() * * *
-        playor.seek(to: CMTime(seconds: 0, preferredTimescale: 100), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            self.addPlayorToView(link: selectedVideoLink)    ///setupHardPlayer() * * *
+        }
+            playor.seek(to: CMTime(seconds: 0, preferredTimescale: 100), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
         frameSlider.addTarget(self, action: #selector(slideToSeek(_:)), for: .valueChanged)
         /// frameSlider.setValue(Float(times[x]/levelLength), animated: true)
         setupHorizontalBar()
+        
         
 //        if !calibrateMode {
 //            addSubview(frameSlider)

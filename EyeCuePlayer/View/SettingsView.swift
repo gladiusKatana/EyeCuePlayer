@@ -1,14 +1,9 @@
 // eyeCuePlayer ･ SettingsView.swift
 import UIKit
 
-var musicSwitchState = false;  var slideshowModeSwitchState = false;  var autoDescriptionsSwitchState = false;  var tempBool = false
-var musicOn = false;    var slideshowModeOn = false;    var autoDescriptionsOn = false
-
-
 class SaveableSwitch: UISwitch {
     var switchStateVarName = "the name of the bool to send"
 }
-
 
 class SettingsView: UIView { //MARK: ------------- Settings
     var homeVC = HomeVC()
