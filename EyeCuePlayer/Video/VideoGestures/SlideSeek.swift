@@ -33,7 +33,7 @@ extension VideoPlayerView {
             }
             delT = times[x] - position
             ///}
-//            if sender.value > 0.8 * Float(viewFrameHeight) / sliderLength {print("maxxed out slider")}
+            //if sender.value > 0.8 * Float(viewFrameHeight) / sliderLength {print("maxxed out slider")}
             
             //if (0.301 ..< 0.303).contains(sender.value) {
             if sender.value >= 0.45 {

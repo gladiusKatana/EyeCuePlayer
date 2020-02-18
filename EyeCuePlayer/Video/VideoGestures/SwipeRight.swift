@@ -2,7 +2,7 @@
 import UIKit
 
 extension VideoVC {
-
+    
     @objc func handleRightSwipe() {
         
         //if Int((leftSwipe.location(in: videoPlayerView)).y) < maxGestureYValue {

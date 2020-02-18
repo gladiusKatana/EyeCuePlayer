@@ -2,7 +2,7 @@
 import UIKit
 
 extension VideoPlayerView {
-
+    
     func removeDuplicates() {
         print("\n{length = \(times.count)}")
         print(print("\ntimes = \(times)"))
@@ -22,6 +22,6 @@ extension VideoPlayerView {
         print("\n-----------------------------------------------------------------------removing duplicates at: \(timesIndicesToRemove)\n")
         times = times.removeDuplicatesFromList();    print("ok, now times = \(times)")
     }
-
+    
 }
 

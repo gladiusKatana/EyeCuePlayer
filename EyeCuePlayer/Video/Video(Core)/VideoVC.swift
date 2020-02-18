@@ -24,7 +24,7 @@ class VideoVC: UIViewController, UIGestureRecognizerDelegate {
         
         backgroundView.backgroundColor = .clear
         AppUtility.lockOrientation(.landscape, andRotateTo: .landscapeRight)
-
+        
         setupVideoGestures()
         
         backgroundView.addSubview(videoPlayerView)

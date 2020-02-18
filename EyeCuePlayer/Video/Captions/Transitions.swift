@@ -47,7 +47,5 @@ extension MessageVC {
             self.handleMessageDismiss()
         }
     }
-    
-    
 }
 

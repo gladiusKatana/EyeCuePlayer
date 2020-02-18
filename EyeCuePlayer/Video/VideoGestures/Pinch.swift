@@ -2,7 +2,7 @@
 import UIKit
 
 extension VideoVC {
-
+    
     @objc func handlePinch() {
         if !justPinched {
             justPinched = true
