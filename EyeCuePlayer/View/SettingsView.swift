@@ -31,7 +31,7 @@ class SettingsView: UIView { //MARK: ------------- Settings
         autoDescriptionsSwitch.addTarget(self, action: #selector(switchFlipped), for: .valueChanged)
         return autoDescriptionsSwitch
     }()
-
+    
     //MARK: ----------------------------------------------------------------- Labels
     
     let settingsLabel: UILabel = {

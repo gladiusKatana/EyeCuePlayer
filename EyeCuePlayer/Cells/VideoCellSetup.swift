@@ -9,13 +9,13 @@ extension VideoCell {
         addSubview(titleLabel)
         addSubview(userProfileImageView)
         addSubview(feedTitleLabel)
-
+        
         addConstraintsWithFormat("V:|-0-[v0]-(-20)-[v1(20)]-0-|", views: thumbnailImageView, userProfileImageView)
         
         addConstraintsWithFormat("H:|-0-[v0]-(-30)-[v1(20)]-|", views: thumbnailImageView, userProfileImageView)
         addConstraintsWithFormat("H:|-0-[v0]-1-|", views: feedTitleLabel)
         addConstraintsWithFormat("H:|-0-[v0]-0-|", views: titleLabel)
-
+        
         addConstraint(NSLayoutConstraint(item: feedTitleLabel, attribute: .top, relatedBy: .equal, toItem: thumbnailImageView, attribute: .top, multiplier: 1, constant: 0))
         
         addConstraint(NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: thumbnailImageView, attribute: .bottom, multiplier: 1, constant: -36))

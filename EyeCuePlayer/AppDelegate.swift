@@ -29,7 +29,7 @@ import UIKit;  import CoreData              //; var statusBar = UIView()
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
+        
         let layout = UICollectionViewFlowLayout()  //; layout.scrollDirection = .horizontal
         
         window?.rootViewController = UINavigationController(rootViewController: HomeVC(collectionViewLayout: layout))

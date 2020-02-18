@@ -8,9 +8,7 @@ class CellOne: FeedCell {                                        ///There is no 
             
             self.videos = videos
             
-//            self.videos = globalVideos                          //; print("\nvideo link: \(videos.first?.title ?? "!(1)")\n")
-            
-//            print("cell one has \(self.videos!.count) videos")
+            //print("cell one has \(self.videos!.count) videos")
             
             self.collectionView.reloadData()
         }
@@ -24,9 +22,7 @@ class CellTwo: FeedCell {
             
             self.videos = videos
             
-//            self.videos = globalVideos                          //; print("\nvideo link: \(videos.first?.title ?? "!(2)")\n")
-            
-//            print("cell two has \(self.videos!.count) videos")
+            //print("cell two has \(self.videos!.count) videos")
             
             self.collectionView.reloadData()
         }
@@ -40,9 +36,7 @@ class CellThree: FeedCell {
             
             self.videos = videos
             
-//            self.videos = globalVideos                          //; print("\nvideo link: \(videos.first?.title ?? "!(2)")\n")
-            
-//            print("cell three has \(self.videos!.count) videos")
+            //print("cell three has \(self.videos!.count) videos")
             
             self.collectionView.reloadData()
         }

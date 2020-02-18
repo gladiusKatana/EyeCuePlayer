@@ -10,7 +10,7 @@ class CachedImgView: UIImageView {
         
         imageUrlString = urlString
         let url = URL(string: urlString)
-
+        
         image = UIImage(named: "brokenGlassIcon")
         
         if let imageFromCache = imageCache.object(forKey: urlString as AnyObject) as? UIImage {

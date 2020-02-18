@@ -5,12 +5,11 @@ extension VideoCell {
     
     func createDocumentFolderUrl(downloadUrl: URL, formatSelectorId: String) {                  ///print("format selector id = \(formatSelectorId)")
         let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
-        let destination = documentsUrl.appendingPathComponent(downloadUrl.lastPathComponent) /// destination file url
-        ///print("appended path component: \(downloadUrl.lastPathComponent)")           ///; print("destination = \(destination)")
+        let destination = documentsUrl.appendingPathComponent(downloadUrl.lastPathComponent)    // destination file url
+        ///print("appended path component: \(downloadUrl.lastPathComponent)")               ///; print("destination = \(destination)")
+        destinationString = String(describing: destination)         ///;  print("\ndestinationString = \(destinationString)")
         
-        destinationString = String(describing: destination)                                     ///;  print("\ndestinationString = \(destinationString)")
-        
-        if FileManager().fileExists(atPath: (destination.path)) { ///check if it exists before downloading it
+        if FileManager().fileExists(atPath: (destination.path)) {   // check if it exists before downloading it
             let data = try? Data(contentsOf: destination)
             
             if formatSelectorId == "thumbnail" {
@@ -26,7 +25,7 @@ extension VideoCell {
                 //print("▶︎ file already exists at path (\(formatSelectorId))");  tempSavedBool = true
                 //print("// destinationString:  \(destinationString)")
             } else {print("file selector id error")}
-        } else {                                                        //print("☐  file doesn't exist at path yet (\(formatSelectorId)) ")
+        } else {                                                    ///print("☐  file doesn't exist at path yet (\(formatSelectorId)) ")
             URLSession.shared.downloadTask(with: downloadUrl, completionHandler: { (location, response, error) in
                 ///just download the data from your url; then you need to save it to your destination url
                 guard

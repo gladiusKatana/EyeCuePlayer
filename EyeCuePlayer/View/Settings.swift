@@ -26,7 +26,7 @@ extension SettingsView {
             }
             else {
                 if started {
-                    videoVC.playButtonAppear()               //*** try(ied) to get play button to animate (lots of cruft deleted below)
+                    videoVC.playButtonAppear() ///*** try(ied) to get play button to animate (lots of cruft deleted. <LOL.>)
                 }
             }
             

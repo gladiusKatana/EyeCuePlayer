@@ -7,7 +7,7 @@ extension SettingsView {
         backgroundColor = .orange   //UIColor.rgb(0, green: 0, blue: 0, alpha: 0.3)
         //print("viewFrameHeight = \(viewFrameHeight)")
         justPinched = false
-
+        
         if viewFrameHeight == 667 {
             settingsButton = UIButton(frame: CGRect(x: 615, y: 2, width: 40, height: 40))
         }
