@@ -1,6 +1,7 @@
 // eyeCuePlayer ･ Colors&Images.swift
 import UIKit
 
+
 var color = UIColor()
 var previousTestColour = UIColor()
 var testColour = UIColor();                 //var uiBarsColor = UIColor.rgb(192, green: 192, blue: 240, alpha: 1)
@@ -10,6 +11,7 @@ var icyBlue = UIColor.rgb(150, green: 180, blue: 220, alpha: 0.3)
 var darkerIceBlue = UIColor.rgb(150, green: 160, blue: 220, alpha: 1)
 //UIColor.rgb(120, green: 100, blue: 200, alpha: 1.0)
 
+var convertedImage = UIImage()
 
 var feedBackgroundImage = UIImage(named: "earth")?.withRenderingMode(.alwaysTemplate)
 var playButtonImage = UIImage(named: "playButtonStencil")?.withRenderingMode(.alwaysTemplate)

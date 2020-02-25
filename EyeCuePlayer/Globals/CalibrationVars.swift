@@ -1,7 +1,18 @@
 // eyeCuePlayer ･ CalibrationVars.swift
 import UIKit//; import AVKit
 
-var times = [0.0, 0.0];                     var descriptions = [String]()
-var timeD = [Double]();                     var pages = [Int]()
-var timesIndicesToRemove = [Int]();         var correctionFactors = [Double]()
+
+var times = [0.0, 0.0]
+
+var timeD = [Double]();
+
+var correctionFactors = [Double]();         var corFac = 0.05 //0.15
+
+var pages = [Int]()
+
+var timesIndicesToRemove = [Int]()
+
+var descriptions = [String]()
+
+//var whitePixelCount = 0
 

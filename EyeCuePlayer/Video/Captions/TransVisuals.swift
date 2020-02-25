@@ -5,7 +5,7 @@ extension VideoVC {
     
     func objectAppearAsButton(_ objectImage: UIImage, xCoord: Int, yCoord: Int, tint: UIColor, deelay: Double, deration: Double) {
         
-        vidOrSlideButton = UIButton(frame: CGRect(x: xCoord, y: yCoord, width: widheight, height: widheight))
+        vidOrSlideButton = UIButton(frame: CGRect(x: xCoord, y: yCoord, width: buttonSize, height: buttonSize))
         
         vidOrSlideButton.setImage(objectImage, for: UIControl.State())
         vidOrSlideButton.isUserInteractionEnabled = false
@@ -19,7 +19,7 @@ extension VideoVC {
             VideoPlayerView.transition(with: messageView, duration: deration, options: .transitionCrossDissolve, animations: {
                 
                 vidOrSlideButton.tintColor = tint
-                vidOrSlideButton.frame = CGRect(x: xCoord, y: yCoord, width: widheight, height: widheight)
+                vidOrSlideButton.frame = CGRect(x: xCoord, y: yCoord, width: buttonSize, height: buttonSize)
             }, completion: nil)
         }
     }
@@ -32,7 +32,7 @@ extension VideoVC {
             
             VideoPlayerView.transition(with: messageView, duration: dismissDuration, options: .transitionCrossDissolve, animations: {
                 vidOrSlideButton.tintColor = UIColor.clear
-                vidOrSlideButton.frame = CGRect(x: xCoord, y: yCoord, width: widheight, height: widheight)
+                vidOrSlideButton.frame = CGRect(x: xCoord, y: yCoord, width: buttonSize, height: buttonSize)
             }, completion: nil)
         }
     }

@@ -19,6 +19,7 @@ extension VideoVC {
                 if slydInCurrentTimeInterval {
                     
                     /*if justSetSliderBackOnce {
+                     var positionPlusT = 0.0
                      videoPlayerView.frameSlider.setValue(Float((positionPlusT + timeAccumulated) * sliderScaleFactor / levelLength), animated: true)
                      } else {*/
                     

@@ -1,13 +1,10 @@
 // eyeCuePlayer ･ GlobalFuncs.swift
 import UIKit
 
-func playForward(){};       func accumulateTime(_ localT: Double){};    func fineDelay(){};                 func paws(){}
-func progress(){};          func seek(_ framesAhead: Int){};            func frameMinus(_ cutoff: Int){};   func framePlus(){}
 
+func playForward(){}
 
-func setupPlayer(){}
-func setupSliderPlayer(_ currentView: UIView){};    func seekVid(_ sender: UISlider){}
-
+func paws(){}
 
 func createDocumentFolderUrl(downloadUrl: URL, formatSelectorId: String){}
 

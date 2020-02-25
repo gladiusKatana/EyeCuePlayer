@@ -1,5 +1,6 @@
 // eyeCuePlayer ･ CoreVars.swift
-import UIKit;   import AVKit
+import UIKit//;   import AVKit
+
 
 var globalWindow = UIWindow(frame: UIScreen.main.bounds)
 
@@ -11,29 +12,15 @@ var settingsPanel = SettingsPanel();        var settingsControllerB = AltSetting
 
 var titleLabel = UILabel()
 
-var convertedImage = UIImage()
 
-
-var messageController = MessageVC()
+var buttonSize = 36
+var viewFrameHeight = 0.0
+var viewFrameWidth = 0.0;               var frameWidth = 100    // replace one of these
+var aspectFrameHeight = 0.0;            var adjustHeight = 7.0
 
 //var xVal = Int(); var yVal = Int()
 
-//var whitePixelCount = 0;
-
-var viewFrameHeight = 0.0
-var viewFrameWidth = 0.0;           var frameWidth = 100    // replace one of these
-var aspectFrameHeight = 0.0;        var adjustHeight = 7.0
-
-
 //---------------------------------------------------------------- reorganized vars up to here so far
-var position = 0.0;                 var positionPlusT = 0.0
-var maxedOutPosition = 0.0
-var loopT = 0.0
-var previousPosition = 0.0
-
-var corFac = 0.05 //0.15
-
-var widheight = 36
 
 var viewLoaded = false;                 var paused = true;              var latch = false;                  var justTapped = false
 var started = false;                    var downPaused = false;         var gonnaSpeed = false;             var justSwiped = false

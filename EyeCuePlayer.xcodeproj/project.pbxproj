@@ -15,7 +15,7 @@
 		063D7BA623F2470600758D82 /* AppLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA223F2470600758D82 /* AppLifecycle.swift */; };
 		063D7BA723F2470600758D82 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA323F2470600758D82 /* Extensions.swift */; };
 		063D7BAE23F2479D00758D82 /* CoreVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BA923F2479D00758D82 /* CoreVars.swift */; };
-		063D7BAF23F2479D00758D82 /* ControlVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAA23F2479D00758D82 /* ControlVars.swift */; };
+		063D7BAF23F2479D00758D82 /* UIVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAA23F2479D00758D82 /* UIVars.swift */; };
 		063D7BB023F2479D00758D82 /* MediaVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAB23F2479D00758D82 /* MediaVars.swift */; };
 		063D7BB123F2479D00758D82 /* GlobalFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */; };
 		063D7BB223F2479D00758D82 /* Colors&Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAD23F2479D00758D82 /* Colors&Images.swift */; };
@@ -85,6 +85,7 @@
 		063D7C4223F248F200758D82 /* MenuTap&HBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0C23F248F200758D82 /* MenuTap&HBar.swift */; };
 		063D7C4323F248F200758D82 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0D23F248F200758D82 /* MessageView.swift */; };
 		06FAD3FC2404DE3900CF3E45 /* CalibrationVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */; };
+		06FAD3FE2404E34E00CF3E45 /* ControlVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FAD3FD2404E34E00CF3E45 /* ControlVars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +99,7 @@
 		063D7BA223F2470600758D82 /* AppLifecycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppLifecycle.swift; path = EyeCuePlayer/AppLifecycle.swift; sourceTree = "<group>"; };
 		063D7BA323F2470600758D82 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = EyeCuePlayer/Extensions.swift; sourceTree = "<group>"; };
 		063D7BA923F2479D00758D82 /* CoreVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreVars.swift; sourceTree = "<group>"; };
-		063D7BAA23F2479D00758D82 /* ControlVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlVars.swift; sourceTree = "<group>"; };
+		063D7BAA23F2479D00758D82 /* UIVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVars.swift; sourceTree = "<group>"; };
 		063D7BAB23F2479D00758D82 /* MediaVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVars.swift; sourceTree = "<group>"; };
 		063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFuncs.swift; sourceTree = "<group>"; };
 		063D7BAD23F2479D00758D82 /* Colors&Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colors&Images.swift"; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 		063D7C0C23F248F200758D82 /* MenuTap&HBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuTap&HBar.swift"; sourceTree = "<group>"; };
 		063D7C0D23F248F200758D82 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationVars.swift; sourceTree = "<group>"; };
+		06FAD3FD2404E34E00CF3E45 /* ControlVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,9 +229,10 @@
 			children = (
 				063D7BA923F2479D00758D82 /* CoreVars.swift */,
 				063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */,
-				06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */,
 				063D7BAB23F2479D00758D82 /* MediaVars.swift */,
-				063D7BAA23F2479D00758D82 /* ControlVars.swift */,
+				06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */,
+				06FAD3FD2404E34E00CF3E45 /* ControlVars.swift */,
+				063D7BAA23F2479D00758D82 /* UIVars.swift */,
 				063D7BAD23F2479D00758D82 /* Colors&Images.swift */,
 			);
 			name = Globals;
@@ -530,7 +533,7 @@
 				063D7BA623F2470600758D82 /* AppLifecycle.swift in Sources */,
 				063D7C4223F248F200758D82 /* MenuTap&HBar.swift in Sources */,
 				063D7C1723F248F200758D82 /* MessageUI.swift in Sources */,
-				063D7BAF23F2479D00758D82 /* ControlVars.swift in Sources */,
+				063D7BAF23F2479D00758D82 /* UIVars.swift in Sources */,
 				063D7C1123F248F200758D82 /* Feeds1toN.swift in Sources */,
 				063D7C2223F248F200758D82 /* AddGestures.swift in Sources */,
 				063D7C4323F248F200758D82 /* MessageView.swift in Sources */,
@@ -542,6 +545,7 @@
 				063D7C1D23F248F200758D82 /* SwipeRight.swift in Sources */,
 				063D7C3623F248F200758D82 /* ProgBar.swift in Sources */,
 				063D7C4123F248F200758D82 /* SettingsSetup.swift in Sources */,
+				06FAD3FE2404E34E00CF3E45 /* ControlVars.swift in Sources */,
 				063D7C2923F248F200758D82 /* VideoVC.swift in Sources */,
 				063D7BB223F2479D00758D82 /* Colors&Images.swift in Sources */,
 				063D7BB023F2479D00758D82 /* MediaVars.swift in Sources */,
