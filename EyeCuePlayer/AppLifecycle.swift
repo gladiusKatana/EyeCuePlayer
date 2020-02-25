@@ -26,8 +26,8 @@ extension AppDelegate {
             else if localSpeed < 0 {
                 
                 swipes = swipes - 1
-                if x != 0 {videoVC.framePlus()};  //videoController.framePlus()
-                if x == 2 { x = x - 1}  //;print("-1  3->2i") }
+                if ecks != 0 {videoVC.framePlus()};  //videoController.framePlus()
+                if ecks == 2 { ecks = ecks - 1}  //;print("-1  3->2i") }
                 justSwiped = false
                 //justInterrupted = true
                 
@@ -38,7 +38,7 @@ extension AppDelegate {
                 else if mode == "fastRev" {  //print("\nmode initially = \(mode)")
                     /*timeAccumulated = timeAccumulated - 0.015*/
                     paused = false
-                    if x <= 2 {videoVC.framePlus()}
+                    if ecks <= 2 {videoVC.framePlus()}
                 }
                 videoVC.playBackwards()  //print("\nmode = \(mode)")
             }
@@ -46,7 +46,7 @@ extension AppDelegate {
     }
     
     func applicationWillResignActive(_ application: UIApplication) {  //print("--------------- willResignActive", terminator: "")
-        playor.pause()
+        avPlayer.pause()
         ////paused = true
         
         if started {

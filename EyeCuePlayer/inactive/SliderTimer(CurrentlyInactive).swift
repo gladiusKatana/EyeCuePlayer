@@ -2,7 +2,7 @@
 import UIKit
 
 extension VideoVC {
-
+    
     //    func sliderMotionTimer(localT: Double) {  //print("------------------------------------------------------ 🕛sliderMOtionTimer")
     //
     //        if (!donePlaying && started) || mode == "reverse" || justInterrupted {
@@ -46,6 +46,6 @@ extension VideoVC {
     //            self.sliderMotionTimer(localT: 1.0)
     //        }
     //    }
-
+    
 }
 

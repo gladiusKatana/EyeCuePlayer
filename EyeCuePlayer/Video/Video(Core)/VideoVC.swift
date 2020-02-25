@@ -19,7 +19,7 @@ class VideoVC: UIViewController, UIGestureRecognizerDelegate {
             seekOn = true  //means seek on  forward mode or forFast mode //or the backward modes
         }
         
-        playor.seek(to: CMTime(seconds: 0, preferredTimescale: 100), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
+        avPlayer.seek(to: CMTime(seconds: 0, preferredTimescale: 100), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
         stopWatch = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(chrono), userInfo: nil, repeats: true)
         
         backgroundView.backgroundColor = .clear

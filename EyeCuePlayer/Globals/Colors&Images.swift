@@ -1,4 +1,4 @@
-// eyeCuePlayer ･ Colours&Images.swift
+// eyeCuePlayer ･ Colors&Images.swift
 import UIKit
 
 var color = UIColor()
@@ -25,3 +25,4 @@ extension UIColor {                                                             
         return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha)
     }
 }
+

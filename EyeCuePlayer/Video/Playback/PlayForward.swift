@@ -18,15 +18,15 @@ extension VideoVC {                             //* verify whether justSlid  is 
             if !gonnaSpeed {  mode = "forward";     selectCorrectionFactor()
                 gonnaSpeed = true
                 
-                playor.pause()
+                avPlayer.pause()
                 //if !justInterrupted {clearAnyDescriptions()}
                 //if !justInterrupted {descriptionLauncher.handleDismiss()} else {print("fack")}
                 
-                playor.play();  paused = false
+                avPlayer.play();  paused = false
                 localSpeed = 1.0;               if calibrateMode {localSpeed = 0.4}
-                playor.rate = Float(localSpeed)                                              //  F o r w a r d
+                avPlayer.rate = Float(localSpeed)                                              //  F o r w a r d
                 
-                if !justSlid {delT = timeD[x]}
+                if !justSlid {delT = timeD[ecks]}
                 taps = taps + 1
                 
                 if !justSwiped && !justFSwiped {                        //print("\n\nTap \(taps)     ", terminator: "")
@@ -43,8 +43,8 @@ extension VideoVC {                             //* verify whether justSlid  is 
             else {  mode = "forFast";   selectCorrectionFactor()
                 gonnaSpeed = false
                 latch = true
-                playor.play()
-                localSpeed = 2.0;   playor.rate = Float(localSpeed)                                      // FastForward
+                avPlayer.play()
+                localSpeed = 2.0;   avPlayer.rate = Float(localSpeed)                                      // FastForward
                 
                 if hourGlassOn {print("")}
                 

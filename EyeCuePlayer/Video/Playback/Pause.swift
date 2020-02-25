@@ -6,17 +6,17 @@ extension VideoVC {
     func paws() {       mode = "paused"  //;  print("paws")             // ⏸ Pause
         
         //let timeToPause = DispatchTime.now();  DispatchQueue.main.asyncAfter(deadline: timeToPause) {playor.pause()}
-        playor.pause()
+        avPlayer.pause()
         
         //if !slideshowModeOn && x < (timeCount - 4) && started {animatePlayButton(0, deration: 0.5)}
         latch = false
         
-        if !(x <= 1 && localSpeed == -1.8) {
-            if !justSlid && x < timeCount - 1 {
-                x = x + 1
+        if !(ecks <= 1 && localSpeed == -1.8) {
+            if !justSlid && ecks < timeCount - 1 {
+                ecks = ecks + 1
             }
         } else {
-            x = x + bubble
+            ecks = ecks + bubble
             if bubble == 1 {print("(x+\(bubble))")}                     // bubble print
         }
         
@@ -27,7 +27,7 @@ extension VideoVC {
         updateProgressBar()                  //if slydInCurrentTimeInterval {x = x - 1}
         
         descriptionT = 0.0
-        timeAccumulatedForSlider = 0.0
+//        timeAccumulatedForSlider = 0.0
         localSpeed = 0.0;           bubble = 0
         justSlid = false;           playButtonOn = false
         

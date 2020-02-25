@@ -6,7 +6,7 @@ extension VideoPlayerView {
     func addPlayorToView(link: String) {
         
         if let tempVideoUrl = URL(string: link) { //was NSURL(string: selectedVideoLink)
-            playor = AVPlayer(url: tempVideoUrl as URL)
+            avPlayer = AVPlayer(url: tempVideoUrl as URL)
             let tempVideoCell = VideoCell()
             tempVideoCell.createDocumentFolderUrl(downloadUrl: tempVideoUrl, formatSelectorId: "video")
             viewLoaded = true
@@ -25,11 +25,11 @@ extension VideoPlayerView {
     }
     
     func playerEndNotification() {
-        NotificationCenter.default.addObserver(self, selector: #selector(VideoPlayerView.itemDidFinishPlaying(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playor.currentItem)
+        NotificationCenter.default.addObserver(self, selector: #selector(VideoPlayerView.itemDidFinishPlaying(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: avPlayer.currentItem)
     }
     
     func playerEndReplay() {
-        NotificationCenter.default.addObserver(self, selector: #selector(VideoPlayerView.itemDidFinishPlayingAndWillReplay(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playor.currentItem)
+        NotificationCenter.default.addObserver(self, selector: #selector(VideoPlayerView.itemDidFinishPlayingAndWillReplay(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: avPlayer.currentItem)
     }
     
     @objc func itemDidFinishPlaying(_ notification: Notification) {                 //print("-------------------------- done playing")

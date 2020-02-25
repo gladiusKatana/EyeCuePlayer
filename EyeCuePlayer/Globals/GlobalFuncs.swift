@@ -3,7 +3,11 @@ import UIKit
 
 func playForward(){};       func accumulateTime(_ localT: Double){};    func fineDelay(){};                 func paws(){}
 func progress(){};          func seek(_ framesAhead: Int){};            func frameMinus(_ cutoff: Int){};   func framePlus(){}
+
+
 func setupPlayer(){}
+func setupSliderPlayer(_ currentView: UIView){};    func seekVid(_ sender: UISlider){}
+
 
 func createDocumentFolderUrl(downloadUrl: URL, formatSelectorId: String){}
 
@@ -14,9 +18,7 @@ func displayDate() {
     dateFormatter.dateFormat = "MMM d, h:mm "
     //dateFormatter.timeZone = TimeZone("EST")! as TimeZone
     let str = dateFormatter.string(from: date as Date)
-    //print("-------------")
     print("\(str)")
-    //print("-------------")
 }
 
 

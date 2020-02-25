@@ -6,15 +6,15 @@ extension VideoVC {
     func setParameters(){               ///print("\nsetting parameters")
         mode = "forward.";              //selectedVideoLink = "initially not set"
         
-        /*timeCount = 0;*/              x = 0;                      taps = 0;           quickSwipes = 0;        fSeeks = 0
+        /*timeCount = 0;*/              ecks = 0;                      taps = 0;           quickSwipes = 0;        fSeeks = 0
         /*timeCountMinusOne = 0;*/      fSwipes = 0;                swipes = 0;         quickTaps = 0;          rSeeks = 0
         /**/                            /*levelLength = 0.0;*/      qFSwipes = 0;       bubble = 0
         descriptionT = 0.0
         
         timeAccumulated = 0.0;          localSpeed = 1.0;           delT = 0.0;         //pauseTee = 0.0
-        timeAccumulatedForSlider = 0.0
         delayInter = 0.0;               corFac = 0.05;              boundary = -0.09;   elapsed = 0.0
-        delayInterForSlider = 0.0
+//        timeAccumulatedForSlider = 0.0
+//        delayInterForSlider = 0.0
         
         justPinched = false;        justLongPressed = false
         started = false;            paused = true;              latch = false;          //justSwiped = false
@@ -29,11 +29,11 @@ extension VideoVC {
     }
     
     func framePlus() {
-        if x < timeCount - 3 {x = x + 1}  //;print("+1")
+        if ecks < timeCount - 3 {ecks = ecks + 1}  //;print("+1")
     }
     
     func frameMinus(cutoff: Int) {
-        if x >= cutoff {x = x - 1}  //;print("-1")
+        if ecks >= cutoff {ecks = ecks - 1}  //;print("-1")
     }
     
 }

@@ -19,7 +19,7 @@ extension VideoCell {
                 }
             } else if formatSelectorId == "video" {
                 let earl = URL(fileURLWithPath: (destination.path))
-                playor = AVPlayer(url: earl)
+                avPlayer = AVPlayer(url: earl)
                 viewLoaded = true
                 
                 //print("▶︎ file already exists at path (\(formatSelectorId))");  tempSavedBool = true

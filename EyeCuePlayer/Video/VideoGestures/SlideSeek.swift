@@ -6,14 +6,14 @@ extension VideoPlayerView {
     @objc func slideToSeek(_ sender: UISlider) {
         if !justSlid {                          print("\nS l i d i n g ------------------------------------------------")
             justSlid = true
-            playor.seek(to: CMTime(seconds: times[x], preferredTimescale: 600), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
+            avPlayer.seek(to: CMTime(seconds: times[ecks], preferredTimescale: 600), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
         }
         slydInCurrentTimeInterval = true
         position = Double(sender.value) * levelLength /*/ sliderScaleFactor*//*SSF*/    //; print(sender.value) //SSF=1
         //if position == 0.0 {justSlid = false}
         
         DispatchQueue.main.asyncAfter(deadline: .now()) {
-            playor.seek(to: CMTime(seconds: position, preferredTimescale: 600), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
+            avPlayer.seek(to: CMTime(seconds: position, preferredTimescale: 600), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
         }
         progressBar.progress = Float(position) / Float(levelLength)
         
@@ -22,16 +22,16 @@ extension VideoPlayerView {
             
             for t in times {
                 if ((position) ..< (position + 0.4)).contains(t) {
-                    x = times.firstIndex(of: t)!                                        //; print("x = \(x)")
+                    ecks = times.firstIndex(of: t)!                                        //; print("x = \(x)")
                     //DispatchQueue.main.asyncAfter(deadline: .now()) {
                     //playor.seek(to: CMTime(seconds: times[x], preferredTimescale: 600), toleranceBefore: kCMTimeZero, toleranceAfter: kCMTimeZero)}                                                   //printApproximatePosition()
                 }
             }
             
-            if position >= times[x]  {
-                if x < timeCount - 1 {x = x + 1}
+            if position >= times[ecks]  {
+                if ecks < timeCount - 1 {ecks = ecks + 1}
             }
-            delT = times[x] - position
+            delT = times[ecks] - position
             ///}
             //if sender.value > 0.8 * Float(viewFrameHeight) / sliderLength {print("maxxed out slider")}
             

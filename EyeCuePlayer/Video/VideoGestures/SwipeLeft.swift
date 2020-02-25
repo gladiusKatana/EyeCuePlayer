@@ -7,7 +7,7 @@ extension VideoVC {
         
         //if Int((leftSwipe.location(in: videoPlayerView)).y) < maxGestureYValue {
         
-        if x < timeCount - 2 && !downPaused {
+        if ecks < timeCount - 2 && !downPaused {
             
             if !slideshowModeOn {
                 
@@ -37,7 +37,7 @@ extension VideoVC {
                 seek(framesAhead: 0)
             }
             
-        } else {print("! x = \(x) & downPaused = \(downPaused)")}
+        } else {print("! x = \(ecks) & downPaused = \(downPaused)")}
         //}
     }
 }

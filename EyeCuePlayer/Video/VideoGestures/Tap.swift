@@ -9,7 +9,7 @@ extension VideoVC {
         
         //if (Int((tapG.location(in: videoPlayerView)).y) < maxGestureYValue) || viewFrameHeight == 768 {
         
-        if x < timeCount - 2 {
+        if ecks < timeCount - 2 {
             
             if slideshowModeOn {
                 handleLeftSwipe()
@@ -28,7 +28,7 @@ extension VideoVC {
                         } else {latchKey(); print("<tap> latch error")}
                     }
                     else  {
-                        playor.rate = Float(localSpeed)
+                        avPlayer.rate = Float(localSpeed)
                         downPaused = false
                         latch = false
                     }
@@ -37,7 +37,7 @@ extension VideoVC {
                 } else {print("descriptionT is too large")}
             }
         } else {                                                                print("\n                  ...looped back around...\n")
-            x = -1
+            ecks = -1
             started = false
             paws()
             seek(framesAhead: 0)

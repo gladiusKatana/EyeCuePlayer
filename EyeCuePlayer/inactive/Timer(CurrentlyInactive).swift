@@ -2,7 +2,7 @@
 import UIKit
 
 extension VideoVC {
-
+    
     //    func earlyPlayButtonAnimate() {
     //        if (abs(delT - corFac - moreFac) ..< abs(delT - corFac)).contains(abs(timeAccumulated)) {
     //            if !playButtonOn {
@@ -20,6 +20,6 @@ extension VideoVC {
     //            }
     //        })
     //    }
-
+    
 }
 

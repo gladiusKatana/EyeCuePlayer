@@ -16,7 +16,7 @@ extension VideoVC {
     }
     
     func animatePlayButton(_ deelay: Double, deration: Double) {                                        //print ("here's the play button")
-        if x > 0 || localSpeed > 0 {
+        if ecks > 0 || localSpeed > 0 {
             
             setPlayButtonFrame()
             newPlayButton.tintColor = UIColor.clear  //.rgb(150, green: 180, blue: 220, alpha: 0.9)

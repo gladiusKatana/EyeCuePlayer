@@ -19,7 +19,7 @@ class SliderView: UIView {
         calibrationSlider.addTarget(self, action: #selector(slideCalibrate(_:)), for: .valueChanged)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.001) {
-            self.calibrationSlider.setValue(Float(times[x]/levelLength), animated: true)
+            self.calibrationSlider.setValue(Float(times[ecks]/levelLength), animated: true)
         }
         backgroundColor = .clear    //UIColor.rgb(150, green: 180, blue: 220, alpha: 0.8)
         
@@ -29,7 +29,7 @@ class SliderView: UIView {
         addConstraintsWithFormat("H:|-10-[v0]-10-|", views: calibrationSlider)
         
         if !justLongPressed {
-            playor.seek(to: CMTime(seconds: Double(times[x]), preferredTimescale: 400), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
+            avPlayer.seek(to: CMTime(seconds: Double(times[ecks]), preferredTimescale: 400), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
         }
     }
     

@@ -6,16 +6,16 @@ extension VideoPlayerView {
     func setupLoadingVideo() {
         let filePath = Bundle.main.path(forResource: " loadingScreen", ofType:"m4v")
         let url = URL(fileURLWithPath: filePath!)
-        playor = AVPlayer(url: url)
+        avPlayer = AVPlayer(url: url)
         
         setupPlayerLayer()
-        playor.play()
+        avPlayer.play()
         playerEndReplay() ///if !viewLoaded {playerEndReplay()}
         playerEndNotification()
     }
     
     func setupPlayerLayer() {
-        playerLayer = AVPlayerLayer(player: playor)
+        playerLayer = AVPlayerLayer(player: avPlayer)
         self.layer.addSublayer(playerLayer)
         playerLayer.videoGravity = AVLayerVideoGravity.resizeAspect//Fill
         playerLayer.frame = globalWindow.frame///(UIApplication.shared.keyWindow?.frame)!

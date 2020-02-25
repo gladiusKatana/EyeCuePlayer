@@ -32,7 +32,7 @@ class VideoPlayerView: UIView {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.addPlayorToView(link: selectedVideoLink)    ///setupHardPlayer() * * *
         }
-        playor.seek(to: CMTime(seconds: 0, preferredTimescale: 100), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
+        avPlayer.seek(to: CMTime(seconds: 0, preferredTimescale: 100), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
         frameSlider.addTarget(self, action: #selector(slideToSeek(_:)), for: .valueChanged)
         /// frameSlider.setValue(Float(times[x]/levelLength), animated: true)
         setupHorizontalBar()

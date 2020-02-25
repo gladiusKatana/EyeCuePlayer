@@ -31,7 +31,7 @@ class MessageVC: UIViewController, UIGestureRecognizerDelegate /*, UINavigationC
         messageView.frame = globalWindow.frame
         globalWindow.addSubview(messageView)
         
-        messageView.messageLabel.text = descriptions[x+1]
+        messageView.messageLabel.text = descriptions[ecks+1]
         /// bug/crash, if certain cells tapped 1st after opening.)  ie,  Determinant, Long Divisn' (vid's w/out enough [descriptions] )
         
         actualDescription = true

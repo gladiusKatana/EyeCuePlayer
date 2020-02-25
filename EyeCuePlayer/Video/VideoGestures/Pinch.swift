@@ -25,7 +25,7 @@ extension VideoVC {
     
     func pinchedOutward() {                     //print("pinch out   vidC")
         position = 0
-        playor.pause();  removeStuff()
+        avPlayer.pause();  removeStuff()
         
         ///if musicOn {pauseTrack(trackTitle: "interloper")}   /// removed file as it was 108MB, GitHub size limit for individual files is 100MB, recommended size 50MB
         

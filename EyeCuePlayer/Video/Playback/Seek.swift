@@ -5,7 +5,7 @@ extension VideoVC {
     
     func seek(framesAhead: Int) {                                           //print("seeked")
         
-        if x < timeCount {
+        if ecks < timeCount {
             
             //if slydInCurrentTimeInterval {
             //let pauseTee = times[x + framesAhead] //- corFac//- 0.1
@@ -13,7 +13,7 @@ extension VideoVC {
             //}
             //else {
             
-            let pauseTee = times[x + framesAhead]
+            let pauseTee = times[ecks + framesAhead]
             seekToCurrentPauseTime(pauseTime: pauseTee)
             
             //}
@@ -25,7 +25,7 @@ extension VideoVC {
     }
     
     func seekToCurrentPauseTime(pauseTime: Double) {
-        playor.seek(to: CMTime(seconds: pauseTime, preferredTimescale: 600), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
+        avPlayer.seek(to: CMTime(seconds: pauseTime, preferredTimescale: 600), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
     }
 }
 

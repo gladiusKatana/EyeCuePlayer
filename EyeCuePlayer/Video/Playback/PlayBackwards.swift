@@ -2,7 +2,7 @@
 import UIKit;  import AVKit
 
 extension VideoVC {
-
+    
     func playBackwards() { //print("<< playing back")
         //newPlayButton.removeFromSuperview()
         dismissPlayButton(0, deration: 0.5)
@@ -11,28 +11,27 @@ extension VideoVC {
         
         if !latch {
             //if !justInterrupted {clearAnyDescriptions()}
-            playor.pause()
+            avPlayer.pause()
             
             if paused {  mode = "reverse";  selectCorrectionFactor()
                 
-                if x > 0 {
+                if ecks > 0 {
                     latch = true
-                    localSpeed = -1.8;  playor.rate = Float(localSpeed)                                     //  R e v e r s e
+                    localSpeed = -1.8;  avPlayer.rate = Float(localSpeed)
                     swipes = swipes + 1
                     
-                    if x == 3  {bubble = 1;
-                        /*print("\nbubble ____________________________________________________________________________________________________________________________________")*/}
+                    if ecks == 3  {bubble = 1/*; print("\nbubble _____________________________________________")*/}
                     print("\n\nSwipe \(swipes)   ", terminator: "");  pryntPlayback(pageKey: 1)
                     
                     frameMinus(cutoff: 1)
-                    if slydInCurrentTimeInterval {x = x + 1}
+                    if slydInCurrentTimeInterval {ecks = ecks + 1}
                     
                     tThrow = CFAbsoluteTimeGetCurrent(); tThrowForSlider = CFAbsoluteTimeGetCurrent()
-                    if !justSlid {delT = -timeD[x]}
+                    if !justSlid {delT = -timeD[ecks]}
                     
-                    if slydInCurrentTimeInterval {delT = -(position - times[x-1])}
+                    if slydInCurrentTimeInterval {delT = -(position - times[ecks-1])}
                     
-                    if x > 1 {
+                    if ecks > 1 {
                         frameMinus(cutoff: 1)
                     }
                     playbackTimer(localT: 1.0)  //; print("called playbackTimer reverse")
@@ -41,8 +40,8 @@ extension VideoVC {
             else {  mode = "fastRev";   selectCorrectionFactor()
                 
                 latch = true
-                playor.play()
-                localSpeed = -1.9;  playor.rate = Float(localSpeed)                                                      // FastReverse
+                avPlayer.play()
+                localSpeed = -1.9;  avPlayer.rate = Float(localSpeed)
                 
                 if justInterrupted {
                     tThrow = CFAbsoluteTimeGetCurrent(); tThrowForSlider = CFAbsoluteTimeGetCurrent()

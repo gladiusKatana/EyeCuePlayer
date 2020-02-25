@@ -7,11 +7,11 @@ extension VideoVC {
         
         //if Int((leftSwipe.location(in: videoPlayerView)).y) < maxGestureYValue {
         
-        if (x != 0) || (x == 0 && localSpeed < 0) {
+        if (ecks != 0) || (ecks == 0 && localSpeed < 0) {
             
             if !slideshowModeOn {
                 
-                if x < timeCount - 1 && !downPaused {
+                if ecks < timeCount - 1 && !downPaused {
                     
                     if !justSwiped {    justSwiped = true
                         
@@ -19,14 +19,14 @@ extension VideoVC {
                             playBackwards()
                         }
                         else  {
-                            playor.rate = Float(localSpeed)
+                            avPlayer.rate = Float(localSpeed)
                             downPaused = false
                             latch = false
                         }
                     }
                     else {
-                        if x == 2  {bubble = -1;                print("\n-------------'Bubble' in playback timing-------------")}
-                        if x >= 0 {
+                        if ecks == 2  {bubble = -1;                print("\n-------------'Bubble' in playback timing-------------")}
+                        if ecks >= 0 {
                             rSeeks = rSeeks + 1                 //print("rSeek \(rSeeks)   ", terminator: "");  pryntPlayback(pageKey: 0)
                         } else {print("x is too small")}
                         //playButtonAppear()
@@ -34,11 +34,11 @@ extension VideoVC {
                         seek(framesAhead: 0)
                         justSwiped = false;  justFSeeked = true
                     }
-                } else {print("x is too large  x = \(x)")}
+                } else {print("x is too large  x = \(ecks)")}
                 
             } else {
-                if x == 0 {x = x + 1}
-                x = x - 2
+                if ecks == 0 {ecks = ecks + 1}
+                ecks = ecks - 2
                 paws()
                 seek(framesAhead: 0)
             }

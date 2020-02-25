@@ -30,17 +30,17 @@ extension VideoVC {
                     if (!paused || mode == "reverse") {
                         
                         if mode == "forward" || mode == "forFast" {
-                            videoPlayerView.frameSlider.setValue(Float((times[x] + timeAccumulated) * sliderScaleFactor / levelLength), animated: true)
-                            videoPlayerView.progressBar.setProgress(Float((times[x] + timeAccumulated)/levelLength), animated: true)
-                            position = (times[x] + timeAccumulated)/levelLength
+                            videoPlayerView.frameSlider.setValue(Float((times[ecks] + timeAccumulated) * sliderScaleFactor / levelLength), animated: true)
+                            videoPlayerView.progressBar.setProgress(Float((times[ecks] + timeAccumulated)/levelLength), animated: true)
+                            position = (times[ecks] + timeAccumulated)/levelLength
                         }
                             
                         else if mode == "reverse" {
-                            videoPlayerView.frameSlider.setValue(Float((times[x + 2] + timeAccumulated) * sliderScaleFactor / levelLength), animated: true)
+                            videoPlayerView.frameSlider.setValue(Float((times[ecks + 2] + timeAccumulated) * sliderScaleFactor / levelLength), animated: true)
                         }
                             
                         else if mode == "fastRev" {
-                            videoPlayerView.frameSlider.setValue(Float((times[x + 1] + timeAccumulated) * sliderScaleFactor / levelLength), animated: true)
+                            videoPlayerView.frameSlider.setValue(Float((times[ecks + 1] + timeAccumulated) * sliderScaleFactor / levelLength), animated: true)
                         }
                     }///}
                 }

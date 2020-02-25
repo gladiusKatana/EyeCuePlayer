@@ -4,9 +4,9 @@ import UIKit; import AVKit  // Prog bar means progress bar (non userInteractive 
 extension VideoVC {
     
     func updateProgressBar() {
-
-        if x < timeCount {
-            videoPlayerView.progressBar.progress = Float (times[x]) / Float(levelLength)
+        
+        if ecks < timeCount {
+            videoPlayerView.progressBar.progress = Float (times[ecks]) / Float(levelLength)
             
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.001) {           ///print("progress set after slider")
@@ -16,10 +16,10 @@ extension VideoVC {
                 //                else {loopT = 0}
                 
                 
-                if justSwiped {x = x - 1}
+                if justSwiped {ecks = ecks - 1}
                 
                 if !justSetSliderBackOnce {
-                    self.videoPlayerView.frameSlider.setValue(Float((times[x]) * sliderScaleFactor / levelLength), animated: true)
+                    self.videoPlayerView.frameSlider.setValue(Float((times[ecks]) * sliderScaleFactor / levelLength), animated: true)
                     //print("error related to setting the slider back ONCE")
                 }
                 

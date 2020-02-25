@@ -18,7 +18,7 @@
 		063D7BAF23F2479D00758D82 /* ControlVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAA23F2479D00758D82 /* ControlVars.swift */; };
 		063D7BB023F2479D00758D82 /* MediaVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAB23F2479D00758D82 /* MediaVars.swift */; };
 		063D7BB123F2479D00758D82 /* GlobalFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */; };
-		063D7BB223F2479D00758D82 /* Colours&Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAD23F2479D00758D82 /* Colours&Images.swift */; };
+		063D7BB223F2479D00758D82 /* Colors&Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BAD23F2479D00758D82 /* Colors&Images.swift */; };
 		063D7BC023F2484A00758D82 /* HomeVCUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BB423F2484A00758D82 /* HomeVCUI.swift */; };
 		063D7BC123F2484A00758D82 /* HomeVCLife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BB523F2484A00758D82 /* HomeVCLife.swift */; };
 		063D7BC223F2484A00758D82 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7BB623F2484A00758D82 /* HomeVC.swift */; };
@@ -84,6 +84,7 @@
 		063D7C4123F248F200758D82 /* SettingsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0B23F248F200758D82 /* SettingsSetup.swift */; };
 		063D7C4223F248F200758D82 /* MenuTap&HBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0C23F248F200758D82 /* MenuTap&HBar.swift */; };
 		063D7C4323F248F200758D82 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0D23F248F200758D82 /* MessageView.swift */; };
+		06FAD3FC2404DE3900CF3E45 /* CalibrationVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,7 +101,7 @@
 		063D7BAA23F2479D00758D82 /* ControlVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlVars.swift; sourceTree = "<group>"; };
 		063D7BAB23F2479D00758D82 /* MediaVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaVars.swift; sourceTree = "<group>"; };
 		063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFuncs.swift; sourceTree = "<group>"; };
-		063D7BAD23F2479D00758D82 /* Colours&Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colours&Images.swift"; sourceTree = "<group>"; };
+		063D7BAD23F2479D00758D82 /* Colors&Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colors&Images.swift"; sourceTree = "<group>"; };
 		063D7BB423F2484A00758D82 /* HomeVCUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVCUI.swift; sourceTree = "<group>"; };
 		063D7BB523F2484A00758D82 /* HomeVCLife.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVCLife.swift; sourceTree = "<group>"; };
 		063D7BB623F2484A00758D82 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -166,6 +167,7 @@
 		063D7C0B23F248F200758D82 /* SettingsSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSetup.swift; sourceTree = "<group>"; };
 		063D7C0C23F248F200758D82 /* MenuTap&HBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuTap&HBar.swift"; sourceTree = "<group>"; };
 		063D7C0D23F248F200758D82 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationVars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,10 +226,11 @@
 			isa = PBXGroup;
 			children = (
 				063D7BA923F2479D00758D82 /* CoreVars.swift */,
-				063D7BAA23F2479D00758D82 /* ControlVars.swift */,
-				063D7BAB23F2479D00758D82 /* MediaVars.swift */,
 				063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */,
-				063D7BAD23F2479D00758D82 /* Colours&Images.swift */,
+				06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */,
+				063D7BAB23F2479D00758D82 /* MediaVars.swift */,
+				063D7BAA23F2479D00758D82 /* ControlVars.swift */,
+				063D7BAD23F2479D00758D82 /* Colors&Images.swift */,
 			);
 			name = Globals;
 			path = EyeCuePlayer/Globals;
@@ -540,7 +543,7 @@
 				063D7C3623F248F200758D82 /* ProgBar.swift in Sources */,
 				063D7C4123F248F200758D82 /* SettingsSetup.swift in Sources */,
 				063D7C2923F248F200758D82 /* VideoVC.swift in Sources */,
-				063D7BB223F2479D00758D82 /* Colours&Images.swift in Sources */,
+				063D7BB223F2479D00758D82 /* Colors&Images.swift in Sources */,
 				063D7BB023F2479D00758D82 /* MediaVars.swift in Sources */,
 				063D7BC123F2484A00758D82 /* HomeVCLife.swift in Sources */,
 				063D7C2723F248F200758D82 /* SlideCalibrate.swift in Sources */,
@@ -559,6 +562,7 @@
 				063D7C1023F248F200758D82 /* APIService.swift in Sources */,
 				063D7C3423F248F200758D82 /* Seek.swift in Sources */,
 				063D7C2B23F248F200758D82 /* VideoViewSetup.swift in Sources */,
+				06FAD3FC2404DE3900CF3E45 /* CalibrationVars.swift in Sources */,
 				063D7BB123F2479D00758D82 /* GlobalFuncs.swift in Sources */,
 				063D7C3123F248F200758D82 /* Corrections.swift in Sources */,
 				063D7C1F23F248F200758D82 /* Pinch.swift in Sources */,
