@@ -18,13 +18,14 @@ var position = 0.0;                 var maxedOutPosition = 0.0
 var sliderScaleFactor = 1.0
 
 
-//var delayInterForSlider = 0.0
-//var timeAccumulatedForSlider = 0.0
 var levelLength = 0.0
 var delayInter = 0.0;               var delT = 0.0;
 var timeAccumulated = 0.0;          var elapsed = 0.0
 var descriptionT = 0.0
-//var diff = 0.0
 
+//var delayInterForSlider = 0.0
+//var timeAccumulatedForSlider = 0.0
+
+//var diff = 0.0
 //var loopT = 0.0
 

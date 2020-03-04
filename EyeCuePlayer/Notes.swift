@@ -1,7 +1,7 @@
 // eyeCuePlayer ･ Notes.swift   //  Created by Garth Snyder on 2017-06-27.  //  Copyright © 2017 Garth Snyder. All rights reserved.
 
 
-/* 
+/*
  ✏️ to rewrite*                                                              * since re-pot / Swift 5 conversion.  (above: original version date)
 
         (trivial) reorg/refactor/rename global variables & functions based on their... function (see 'Globals' group)
@@ -29,6 +29,8 @@
 
         2-way Remote w/playback control only for Lecturer device; all controls for Student device (*2-way Remote is defaulted, using MPC)
         
+ 
+        Video downloading: notifications & warnings: if not within wifi network; optional near-ISP's-limit; download complete notification
  
         
         Video Cells: Multigestures replace button subviews
