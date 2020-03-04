@@ -1,6 +1,8 @@
 // eyeCuePlayer ･ ControlVars.swift
 import UIKit
 
+var remoteControlVC = RemoteControlVC()
+
 
 var tThrow = CFAbsoluteTimeGetCurrent();                    var tCatch = CFAbsoluteTimeGetCurrent()
 var tThrowForSlider = CFAbsoluteTimeGetCurrent()            //; var tCatchForSlider = CFAbsoluteTimeGetCurrent()
@@ -22,6 +24,9 @@ var levelLength = 0.0
 var delayInter = 0.0;               var delT = 0.0;
 var timeAccumulated = 0.0;          var elapsed = 0.0
 var descriptionT = 0.0
+
+var isController = true
+var slideshowModeOn = false;        var autoDescriptionsOn = false
 
 //var delayInterForSlider = 0.0
 //var timeAccumulatedForSlider = 0.0

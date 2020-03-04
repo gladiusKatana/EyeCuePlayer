@@ -5,6 +5,10 @@ extension VideoVC {
     
     func paws() {       mode = "paused"  //;  print("paws")             // ⏸ Pause
         
+        if !isController {
+            isController = true // only when current video-clip is done playing is control interchangeable between devices running this app
+        }
+        
         //let timeToPause = DispatchTime.now();  DispatchQueue.main.asyncAfter(deadline: timeToPause) {playor.pause()}
         avPlayer.pause()
         

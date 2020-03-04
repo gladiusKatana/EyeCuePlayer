@@ -27,6 +27,7 @@ class VideoVC: UIViewController, UIGestureRecognizerDelegate {
         
         setupVideoGestures()
         
+        backgroundView.addSubview(remoteControlVC.view)
         backgroundView.addSubview(videoPlayerView)
         if autoDescriptionsOn /*|| x == 0*/ {messageController.showMessageView()}
         

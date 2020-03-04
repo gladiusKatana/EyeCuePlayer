@@ -84,6 +84,8 @@
 		063D7C4123F248F200758D82 /* SettingsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0B23F248F200758D82 /* SettingsSetup.swift */; };
 		063D7C4223F248F200758D82 /* MenuTap&HBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0C23F248F200758D82 /* MenuTap&HBar.swift */; };
 		063D7C4323F248F200758D82 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0D23F248F200758D82 /* MessageView.swift */; };
+		06B0BD9E240F806B0023C48B /* RemoteCtrlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B0BD9D240F806B0023C48B /* RemoteCtrlVC.swift */; };
+		06B0BDA0240F80A50023C48B /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B0BD9F240F80A50023C48B /* RemoteService.swift */; };
 		06FAD3FC2404DE3900CF3E45 /* CalibrationVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */; };
 		06FAD3FE2404E34E00CF3E45 /* ControlVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FAD3FD2404E34E00CF3E45 /* ControlVars.swift */; };
 /* End PBXBuildFile section */
@@ -168,6 +170,8 @@
 		063D7C0B23F248F200758D82 /* SettingsSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSetup.swift; sourceTree = "<group>"; };
 		063D7C0C23F248F200758D82 /* MenuTap&HBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MenuTap&HBar.swift"; sourceTree = "<group>"; };
 		063D7C0D23F248F200758D82 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		06B0BD9D240F806B0023C48B /* RemoteCtrlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCtrlVC.swift; sourceTree = "<group>"; };
+		06B0BD9F240F80A50023C48B /* RemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
 		06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationVars.swift; sourceTree = "<group>"; };
 		06FAD3FD2404E34E00CF3E45 /* ControlVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +195,7 @@
 				063D7BA223F2470600758D82 /* AppLifecycle.swift */,
 				063D7BA323F2470600758D82 /* Extensions.swift */,
 				063D7BA823F2479D00758D82 /* Globals */,
+				06B0BD98240F80320023C48B /* RemoteControl */,
 				063D7BCE23F248F100758D82 /* Model */,
 				063D7C0623F248F200758D82 /* View */,
 				063D7BCB23F248F100758D82 /* ViewModel */,
@@ -354,10 +359,10 @@
 		063D7BEC23F248F100758D82 /* Video(Core) */ = {
 			isa = PBXGroup;
 			children = (
-				063D7BED23F248F100758D82 /* SliderController.swift */,
 				063D7BEE23F248F100758D82 /* VideoVC.swift */,
 				063D7BEF23F248F100758D82 /* VideoPlayerView.swift */,
 				063D7BF023F248F100758D82 /* VideoViewSetup.swift */,
+				063D7BED23F248F100758D82 /* SliderController.swift */,
 			);
 			path = "Video(Core)";
 			sourceTree = "<group>";
@@ -378,13 +383,13 @@
 		063D7BF823F248F100758D82 /* Playback */ = {
 			isa = PBXGroup;
 			children = (
-				063D7BF923F248F100758D82 /* PlayBackwards.swift */,
-				063D7BFA23F248F100758D82 /* Parameters.swift */,
-				063D7BFB23F248F100758D82 /* Seek.swift */,
 				063D7BFC23F248F100758D82 /* PlayerLife.swift */,
-				063D7BFD23F248F100758D82 /* ProgBar.swift */,
-				063D7BFE23F248F100758D82 /* Pause.swift */,
 				063D7BFF23F248F100758D82 /* PlayForward.swift */,
+				063D7BF923F248F100758D82 /* PlayBackwards.swift */,
+				063D7BFE23F248F100758D82 /* Pause.swift */,
+				063D7BFB23F248F100758D82 /* Seek.swift */,
+				063D7BFA23F248F100758D82 /* Parameters.swift */,
+				063D7BFD23F248F100758D82 /* ProgBar.swift */,
 			);
 			path = Playback;
 			sourceTree = "<group>";
@@ -422,6 +427,16 @@
 			);
 			name = View;
 			path = EyeCuePlayer/View;
+			sourceTree = "<group>";
+		};
+		06B0BD98240F80320023C48B /* RemoteControl */ = {
+			isa = PBXGroup;
+			children = (
+				06B0BD9D240F806B0023C48B /* RemoteCtrlVC.swift */,
+				06B0BD9F240F80A50023C48B /* RemoteService.swift */,
+			);
+			name = RemoteControl;
+			path = EyeCuePlayer/RemoteControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,6 +537,7 @@
 				063D7C2F23F248F200758D82 /* PlayButton.swift in Sources */,
 				063D7C2523F248F200758D82 /* PixelDetector.swift in Sources */,
 				063D7C1223F248F200758D82 /* Video.swift in Sources */,
+				06B0BDA0240F80A50023C48B /* RemoteService.swift in Sources */,
 				063D7BCA23F2484A00758D82 /* TapFeedCell.swift in Sources */,
 				063D7C3823F248F200758D82 /* PlayForward.swift in Sources */,
 				063D7C3E23F248F200758D82 /* MenuBar.swift in Sources */,
@@ -560,6 +576,7 @@
 				063D7C3723F248F200758D82 /* Pause.swift in Sources */,
 				063D7C3C23F248F200758D82 /* SettingsPanel.swift in Sources */,
 				063D7C2823F248F200758D82 /* SliderController.swift in Sources */,
+				06B0BD9E240F806B0023C48B /* RemoteCtrlVC.swift in Sources */,
 				063D7C1623F248F200758D82 /* InactiveVisuals.swift in Sources */,
 				063D7C0E23F248F200758D82 /* CachedImgView.swift in Sources */,
 				063D7C1923F248F200758D82 /* Transitions.swift in Sources */,

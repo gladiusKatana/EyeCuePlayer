@@ -5,6 +5,10 @@ extension VideoVC {
     
     @objc func handleTap() {                                                    ///print("location = \(tapG.location(in: videoPlayerView))")
         
+        if isController {
+            remoteControlVC.remoteService.send(controlName: "tap")
+        }
+        
         //if printAnomalousDiffValue {print("diff = \(diff)")}
         
         //if (Int((tapG.location(in: videoPlayerView)).y) < maxGestureYValue) || viewFrameHeight == 768 {

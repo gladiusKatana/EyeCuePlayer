@@ -30,5 +30,5 @@ var calibTaps = 0;
 //MARK: Settings
 
 var musicSwitchState = false;  var slideshowModeSwitchState = false;  var autoDescriptionsSwitchState = false;  var tempBool = false
-var musicOn = false;    var slideshowModeOn = false;    var autoDescriptionsOn = true
+var musicOn = false
 
