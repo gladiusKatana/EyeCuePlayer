@@ -9,7 +9,7 @@ class RemoteControlVC: UIViewController, RemoteServiceDelegate {
         super.viewDidLoad()
         remoteService.delegate = self
     }
-
+    
     func connectedDevicesChanged(manager: RemoteService, connectedDevices: [String]) {
         OperationQueue.main.addOperation {}
     }

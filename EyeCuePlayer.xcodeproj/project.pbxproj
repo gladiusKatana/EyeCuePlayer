@@ -86,6 +86,7 @@
 		063D7C4323F248F200758D82 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D7C0D23F248F200758D82 /* MessageView.swift */; };
 		06B0BD9E240F806B0023C48B /* RemoteCtrlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B0BD9D240F806B0023C48B /* RemoteCtrlVC.swift */; };
 		06B0BDA0240F80A50023C48B /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B0BD9F240F80A50023C48B /* RemoteService.swift */; };
+		06B0BDA2240F89A70023C48B /* RemoteSvcExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B0BDA1240F89A70023C48B /* RemoteSvcExt.swift */; };
 		06FAD3FC2404DE3900CF3E45 /* CalibrationVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */; };
 		06FAD3FE2404E34E00CF3E45 /* ControlVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FAD3FD2404E34E00CF3E45 /* ControlVars.swift */; };
 /* End PBXBuildFile section */
@@ -172,6 +173,7 @@
 		063D7C0D23F248F200758D82 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		06B0BD9D240F806B0023C48B /* RemoteCtrlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCtrlVC.swift; sourceTree = "<group>"; };
 		06B0BD9F240F80A50023C48B /* RemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
+		06B0BDA1240F89A70023C48B /* RemoteSvcExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSvcExt.swift; sourceTree = "<group>"; };
 		06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrationVars.swift; sourceTree = "<group>"; };
 		06FAD3FD2404E34E00CF3E45 /* ControlVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -434,6 +436,7 @@
 			children = (
 				06B0BD9D240F806B0023C48B /* RemoteCtrlVC.swift */,
 				06B0BD9F240F80A50023C48B /* RemoteService.swift */,
+				06B0BDA1240F89A70023C48B /* RemoteSvcExt.swift */,
 			);
 			name = RemoteControl;
 			path = EyeCuePlayer/RemoteControl;
@@ -544,6 +547,7 @@
 				063D7BC323F2484A00758D82 /* HomeVCSetup.swift in Sources */,
 				063D7C2A23F248F200758D82 /* VideoPlayerView.swift in Sources */,
 				063D7C1523F248F200758D82 /* SlowMoController.swift in Sources */,
+				06B0BDA2240F89A70023C48B /* RemoteSvcExt.swift in Sources */,
 				063D7C1C23F248F200758D82 /* SlideSeek.swift in Sources */,
 				063D7BC523F2484A00758D82 /* VideoCellSetup.swift in Sources */,
 				063D7BA623F2470600758D82 /* AppLifecycle.swift in Sources */,
