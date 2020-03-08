@@ -5,6 +5,8 @@ extension VideoVC {
     
     @objc func handleLeftSwipe() {
         
+        if isController {remoteControlVC.remoteService.send(controlName: "lswipe")}
+        
         //if Int((leftSwipe.location(in: videoPlayerView)).y) < maxGestureYValue {
         
         if ecks < timeCount - 2 && !downPaused {

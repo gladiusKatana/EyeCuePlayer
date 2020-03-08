@@ -4,6 +4,9 @@ import UIKit
 extension VideoVC {
     
     @objc func handlePinch() {
+        
+        if isController {remoteControlVC.remoteService.send(controlName: "pinch")}
+        
         if !justPinched {
             justPinched = true
             

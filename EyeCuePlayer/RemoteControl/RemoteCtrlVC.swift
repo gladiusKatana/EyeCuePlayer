@@ -19,11 +19,15 @@ class RemoteControlVC: UIViewController, RemoteServiceDelegate {
         
         OperationQueue.main.addOperation {
             
+            isController = false
+            
             switch remoteControlString {
                 
-            case "tap":
-                isController = false
-                videoVC.handleTap()
+            case "tap":         videoVC.handleTap()
+            case "rswipe":      videoVC.handleRightSwipe()
+            case "lswipe":      videoVC.handleLeftSwipe()
+            case "pinch":       videoVC.handlePinch()
+            case "longPress":   videoVC.handleLongPress()
                 
             default:
                 NSLog("%@", "Unknown remote control string received: \(remoteControlString)")

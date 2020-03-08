@@ -3,7 +3,9 @@ import UIKit
 
 extension VideoVC {
     
-    @objc func handleLongPress() {                                                      ///print("longPressLocation (y): \(longP.location(in: videoPlayerView).y)")
+    @objc func handleLongPress() {                              ///print("longPressLocation (y): \(longP.location(in: videoPlayerView).y)")
+        
+        if isController {remoteControlVC.remoteService.send(controlName: "longPress")}
         
         if !justLongPressed {       //sliderController.sliderControllerShowVideoPlayer()
             

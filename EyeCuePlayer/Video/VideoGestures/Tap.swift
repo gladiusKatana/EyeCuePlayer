@@ -5,9 +5,7 @@ extension VideoVC {
     
     @objc func handleTap() {                                                    ///print("location = \(tapG.location(in: videoPlayerView))")
         
-        if isController {
-            remoteControlVC.remoteService.send(controlName: "tap")
-        }
+        if isController {remoteControlVC.remoteService.send(controlName: "tap")}
         
         //if printAnomalousDiffValue {print("diff = \(diff)")}
         
