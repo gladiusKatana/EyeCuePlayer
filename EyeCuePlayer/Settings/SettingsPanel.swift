@@ -43,6 +43,8 @@ class SettingsPanel: NSObject, UIGestureRecognizerDelegate {
         //numberOfSimulatedOutPinches = numberOfSimulatedOutPinches + 1
         //settingsBackgroundView.removeGestureRecognizer(settingsPinch)
         
+        if isController {remoteControlVC.remoteService.send(controlName: "pinchQuitSettings")}
+        
         backgroundView.removeFromSuperview()
         settingsView.removeFromSuperview()
         /**/

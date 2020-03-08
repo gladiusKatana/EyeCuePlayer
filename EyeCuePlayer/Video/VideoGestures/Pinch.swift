@@ -5,10 +5,9 @@ extension VideoVC {
     
     @objc func handlePinch() {
         
-        if isController {remoteControlVC.remoteService.send(controlName: "pinch")}
+//        if isController {remoteControlVC.remoteService.send(controlName: "pinch")}
         
         if !justPinched {
-            justPinched = true
             
             if dismissPinch.velocity < 0 {
                 pinchedInward()
@@ -16,23 +15,34 @@ extension VideoVC {
             else {
                 pinchedOutward()
             }
+            
+            justPinched = true
+            
         } //else {print("just pinched\n")}
     }
     
-    func pinchedInward() {                      //print("\n\npinch in   vidC")      //only inward pinches seem to get called continuously
-        if !pinchedIn {
+    func pinchedInward() {
+        
+        if !pinchedIn {                         print("\n\npinch in   vidC")      //only inward pinches seem to get called continuously
+            
+            if isController {remoteControlVC.remoteService.send(controlName: "pinchIn")}
+            
             settingsPanel.showSettingsView()
-            //pinchedIn = true
+            pinchedIn = true
         }
     }
     
     func pinchedOutward() {                     //print("pinch out   vidC")
-        position = 0
-        avPlayer.pause();  removeStuff()
         
-        ///if musicOn {pauseTrack(trackTitle: "interloper")}   /// removed file as it was 108MB, GitHub size limit for individual files is 100MB, recommended size 50MB
+        if !justPinched {
+            if isController {remoteControlVC.remoteService.send(controlName: "pinchOut")}
+            
+            position = 0
+            avPlayer.pause();  removeStuff()
+            
+            ///if musicOn {pauseTrack(trackTitle: "interloper")}   /// removed file as it was 108MB, GitHub size limit for individual files is 100MB, recommended size 50MB
+        }
         
-        justPinched = true
         tempSavedBool = false
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()) {
             AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)

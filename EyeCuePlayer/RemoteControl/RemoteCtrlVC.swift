@@ -26,8 +26,10 @@ class RemoteControlVC: UIViewController, RemoteServiceDelegate {
             case "tap":         videoVC.handleTap()
             case "rswipe":      videoVC.handleRightSwipe()
             case "lswipe":      videoVC.handleLeftSwipe()
-            case "pinch":       videoVC.handlePinch()
+            case "pinchIn":     videoVC.pinchedInward()
+            case "pinchOut":    videoVC.pinchedOutward()
             case "longPress":   videoVC.handleLongPress()
+            case "pinchQuitSettings":   settingsPanel.dismissSettingsView()
                 
             default:
                 NSLog("%@", "Unknown remote control string received: \(remoteControlString)")
