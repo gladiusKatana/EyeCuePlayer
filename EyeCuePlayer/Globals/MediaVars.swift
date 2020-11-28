@@ -11,7 +11,7 @@ var soundEffectPlayer: AVAudioPlayer?;      var musicPlayer: AVAudioPlayer?
 var messageController = MessageVC()
 
 
-var selectedVideoLink = " ";        var selectedThumbnailLink = " "
+var selectedVideoLink = " ";                var selectedThumbnailLink = " "
 var destinationString = " "
 var mode = "forward"
 var slowMoTempTitle = "temporary title for testing SloMoController"

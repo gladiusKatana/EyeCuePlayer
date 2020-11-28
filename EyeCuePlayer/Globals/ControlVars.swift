@@ -6,6 +6,7 @@ var remoteControlVC = RemoteControlVC()
 
 var tThrow = CFAbsoluteTimeGetCurrent();                    var tCatch = CFAbsoluteTimeGetCurrent()
 var tThrowForSlider = CFAbsoluteTimeGetCurrent()            //; var tCatchForSlider = CFAbsoluteTimeGetCurrent()
+
 var stopWatch = Timer()
 
 
@@ -16,7 +17,7 @@ var timeCountMinusOne = 0;          var swipes = 0;         var qFSwipes = 0
 var boundary = -0.09;               var localSpeed = 1.0
 var bubble = 0
 
-var position = 0.0;                 var maxedOutPosition = 0.0
+var position = 0.0;                 //var maxedOutPosition = 0.0
 var sliderScaleFactor = 1.0
 
 

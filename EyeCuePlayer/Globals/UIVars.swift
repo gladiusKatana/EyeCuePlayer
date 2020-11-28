@@ -5,8 +5,8 @@ import UIKit
 //MARK: Buttons
 
 var vidOrSlideButton = UIButton();              var newPlayButton = UIButton()
-var dotButton = UIButton() ///doesn't need to be a button
 
+var dotButton = UIButton() ///doesn't need to be a button
 
 
 //MARK: Gestures
@@ -26,9 +26,8 @@ var longP = UILongPressGestureRecognizer();     var dismissPinch = UIPinchGestur
 var calibTaps = 0;
 
 
-
 //MARK: Settings
 
-var musicSwitchState = false;  var slideshowModeSwitchState = false;  var autoDescriptionsSwitchState = false;  var tempBool = false
-var musicOn = false
+var musicSwitchState = false;               var slideshowModeSwitchState = false;   var autoDescriptionsSwitchState = false
+var musicOn = false;                        var tempBool = false
 

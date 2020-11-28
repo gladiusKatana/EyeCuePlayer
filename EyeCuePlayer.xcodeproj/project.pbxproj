@@ -235,12 +235,12 @@
 			isa = PBXGroup;
 			children = (
 				063D7BA923F2479D00758D82 /* CoreVars.swift */,
-				063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */,
-				063D7BAB23F2479D00758D82 /* MediaVars.swift */,
 				06FAD3FB2404DE3900CF3E45 /* CalibrationVars.swift */,
 				06FAD3FD2404E34E00CF3E45 /* ControlVars.swift */,
+				063D7BAB23F2479D00758D82 /* MediaVars.swift */,
 				063D7BAA23F2479D00758D82 /* UIVars.swift */,
 				063D7BAD23F2479D00758D82 /* Colors&Images.swift */,
+				063D7BAC23F2479D00758D82 /* GlobalFuncs.swift */,
 			);
 			name = Globals;
 			path = EyeCuePlayer/Globals;
