@@ -28,7 +28,7 @@ func fetchFeedForUrlString(urlString: String, completion: @escaping ([Video]) ->
     
     guard let url = URL(string: urlString) else {print("error binding url"); return}
     
-    URLSession.shared.dataTask(with: url) { (data, response, error) in                              //may want to add a guard let
+    URLSession.shared.dataTask(with: url) { (data, response, error) in
         let data = data
         
         if error != nil {
@@ -55,7 +55,9 @@ func fetchFeedForUrlString(urlString: String, completion: @escaping ([Video]) ->
                             video.times = $0["times"] as? [Double]
                             video.pages_to_edit = $0["pages_to_edit"] as? [Int]
                             
-                            let channelDictionary = $0["channel"] as! [String: AnyObject]           // safe unwrap
+                            guard let channelDictionary = $0["channel"] as? [String: AnyObject] else {
+                                print("could not downcast channel dictionary"); return video
+                            }
                             
                             let channel = Channel()
                             channel.name = channelDictionary["name"] as? String
@@ -64,7 +66,7 @@ func fetchFeedForUrlString(urlString: String, completion: @escaping ([Video]) ->
                             video.channel = channel                                     //; print("json map video: \(video.title ?? "")")
                             
                             return video
-                            }
+                        }
                         )
                     )
                 }
