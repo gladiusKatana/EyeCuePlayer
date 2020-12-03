@@ -36,7 +36,7 @@ extension SliderController {
             backgroundView.removeFromSuperview()
             videoVC.videoPlayerView.removeFromSuperview()
         }
-            
+        
         else{print("just pinched!\n")}
     }
 }

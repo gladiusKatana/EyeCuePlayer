@@ -2,7 +2,7 @@
 import UIKit
 
 extension MessageVC {
-
+    
     @objc func handlePinchForDescription() {                                //print("handlePinchForMessage")
         //handleDownSwipeForDescription()
         //videoVC.handlePinch()
@@ -40,14 +40,14 @@ extension MessageVC {
     }
     
     /*func backgroundViewDarken() {
-        MessageView.animate(withDuration: 2.0, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-            messageView.backgroundColor = .red //UIColor.rgb(0, green: 0, blue: 0, alpha: 0.3)
-        }, completion: nil)
-    }
-    func backgroundViewBrighten() {
-        MessageView.animate(withDuration: 3.0, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
-            messageView.backgroundColor = UIColor.clear
-        }, completion: nil)
-    }*/
+     MessageView.animate(withDuration: 2.0, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+     messageView.backgroundColor = .red //UIColor.rgb(0, green: 0, blue: 0, alpha: 0.3)
+     }, completion: nil)
+     }
+     func backgroundViewBrighten() {
+     MessageView.animate(withDuration: 3.0, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+     messageView.backgroundColor = UIColor.clear
+     }, completion: nil)
+     }*/
 }
 

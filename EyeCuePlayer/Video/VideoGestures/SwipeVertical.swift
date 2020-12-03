@@ -22,7 +22,7 @@ extension VideoVC {
         if calibrateMode {
             if !started {playForward()      ;  print("(calibrate mode) initial tap to play")}
         }
-            
+        
         else {
             //if Int((downSwipe.location(in: videoPlayerView)).y) < maxGestureYValue {
             if justUpSwiped    {

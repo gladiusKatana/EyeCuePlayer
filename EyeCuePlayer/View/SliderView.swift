@@ -39,25 +39,25 @@ class SliderView: UIView {
 /*
  extension SliderView {
  func setupSliderPlayer(link: String) {                                                   //?? Seems to get called twice...  or does it??
-    if let url = URL(string: selectedVideoLink) {   //was NSURL(string: selected Video Link) without the spaces lol
-        playor = AVPlayer(url: url as URL)
-        let tempVideoCell = VideoCell()
-        tempVideoCell.createDocumentFolderUrl(downloadUrl: url, formatSelectorId: "video")      //! prevent console print for sliderView
-        viewLoaded = true                                                                                  /**********************/
-    }
-    
-    playerLayer = AVPlayerLayer(player: playor)
-    self.layer.addSublayer(playerLayer)
-    playerLayer.videoGravity = AVLayerVideoGravityResizeAspect//Fill
-    //playerLayer.frame = (UIApplication.shared.keyWindow?.frame)!
-    
-    if let keyWindow = UIApplication.shared.keyWindow {
-        //let sliderViewFrame = CGRect(x: 0, y: 5, width: keyWindow.frame.width, height: keyWindow.frame.height - 90)
-        let sliderViewFrame = CGRect(x: 0, y: 0, width: keyWindow.frame.width, height: keyWindow.frame.height)
-        playerLayer.frame = sliderViewFrame
-    }
-    timeCount = times.count;  timeCountMinusOne = timeCount - 1       //;  print("timeCount = \(timeCount)")
-}
+ if let url = URL(string: selectedVideoLink) {   //was NSURL(string: selected Video Link) without the spaces lol
+ playor = AVPlayer(url: url as URL)
+ let tempVideoCell = VideoCell()
+ tempVideoCell.createDocumentFolderUrl(downloadUrl: url, formatSelectorId: "video")      //! prevent console print for sliderView
+ viewLoaded = true                                                                                  /**********************/
+ }
+ 
+ playerLayer = AVPlayerLayer(player: playor)
+ self.layer.addSublayer(playerLayer)
+ playerLayer.videoGravity = AVLayerVideoGravityResizeAspect//Fill
+ //playerLayer.frame = (UIApplication.shared.keyWindow?.frame)!
+ 
+ if let keyWindow = UIApplication.shared.keyWindow {
+ //let sliderViewFrame = CGRect(x: 0, y: 5, width: keyWindow.frame.width, height: keyWindow.frame.height - 90)
+ let sliderViewFrame = CGRect(x: 0, y: 0, width: keyWindow.frame.width, height: keyWindow.frame.height)
+ playerLayer.frame = sliderViewFrame
+ }
+ timeCount = times.count;  timeCountMinusOne = timeCount - 1       //;  print("timeCount = \(timeCount)")
+ }
  }
  */
 

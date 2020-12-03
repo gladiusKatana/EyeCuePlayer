@@ -12,7 +12,7 @@ extension SettingsView {
         }
         
         switch mySwitch.switchStateVarName {
-            
+        
         case "musicSwitchState":                                //print("musicSwitch")
             musicSwitchState = tempBool
             musicOn = musicSwitchState

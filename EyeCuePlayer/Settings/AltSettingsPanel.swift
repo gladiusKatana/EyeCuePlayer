@@ -14,7 +14,7 @@ class AltSettingsPanel: NSObject, UIGestureRecognizerDelegate {
     func showSettingsView() {                       //print("----------------- Settings B")
         justPinched = false
         
-        settingsView = SettingsView(frame: globalWindow.frame)  //use the lazyvar above instead... or else calls its override init 2x
+        settingsView = SettingsView(frame: globalWindow.frame)  ///use the lazy var above instead... or else calls its override init 2x
         settingsView.backgroundColor = UIColor.rgb(75, green: 90, blue: 110, alpha: 0.9)
         
         settingsView.settingsButton.tintColor = .white

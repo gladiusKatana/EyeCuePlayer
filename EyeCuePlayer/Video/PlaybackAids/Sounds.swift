@@ -1,7 +1,6 @@
 // eyeCuePlayer ･ Sounds.swift
 import UIKit; import AVKit
 
-
 extension VideoVC {
     
     func playSound(trackTitle: String) {

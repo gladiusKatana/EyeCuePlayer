@@ -31,10 +31,10 @@ extension VideoCell {
                     let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
                     //let mimeType = response?.mimeType, mimeType.hasPrefix("audio"),
                     let location = location, error == nil
-                    else {
-                        print("uh oh")
-                        viewLoaded = false
-                        return }
+                else {
+                    print("uh oh")
+                    viewLoaded = false
+                    return }
                 do {
                     try FileManager.default.moveItem(at: location, to: destination)
                     if formatSelectorId == "video" {

@@ -39,7 +39,7 @@ extension VideoVC {
                 if justFSwiped {                                        //print("\n\nfSwipe \(fSwipes)  ", terminator: "")
                     pryntPlayback(pageKey: 0)}
             }
-                
+            
             else {  mode = "forFast";   selectCorrectionFactor()
                 gonnaSpeed = false
                 latch = true

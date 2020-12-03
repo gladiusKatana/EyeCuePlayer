@@ -18,23 +18,22 @@ class CachedImgView: UIImageView {
             return
         }
         
-        URLSession.shared.dataTask(with: url!, completionHandler:
-            { (data, respones, error) in
+        URLSession.shared.dataTask(with: url!, completionHandler: { (data, respones, error) in
+            
+            if error != nil {
+                print(error as Any)
+                return
+            }
+            
+            DispatchQueue.main.async(execute: {
                 
-                if error != nil {
-                    print(error as Any)
-                    return
+                let imageToCache = UIImage(data: data!)
+                
+                if self.imageUrlString == urlString {
+                    self.image = imageToCache
                 }
-                
-                DispatchQueue.main.async(execute: {
-                    
-                    let imageToCache = UIImage(data: data!)
-                    
-                    if self.imageUrlString == urlString {
-                        self.image = imageToCache
-                    }
-                    imageCache.setObject(imageToCache!, forKey: urlString as AnyObject)
-                })
+                imageCache.setObject(imageToCache!, forKey: urlString as AnyObject)
+            })
         }).resume()
     }
 }

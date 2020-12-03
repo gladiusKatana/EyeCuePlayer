@@ -35,11 +35,11 @@ extension VideoVC {
                             videoPlayerView.progressBar.setProgress(Float((times[ecks] + timeAccumulated)/levelLength), animated: true)
                             position = (times[ecks] + timeAccumulated)/levelLength
                         }
-                            
+                        
                         else if mode == "reverse" {
                             videoPlayerView.frameSlider.setValue(Float((times[ecks + 2] + timeAccumulated) * sliderScaleFactor / levelLength), animated: true)
                         }
-                            
+                        
                         else if mode == "fastRev" {
                             videoPlayerView.frameSlider.setValue(Float((times[ecks + 1] + timeAccumulated) * sliderScaleFactor / levelLength), animated: true)
                         }
@@ -57,7 +57,7 @@ extension VideoVC {
                         }
                     }
                 }
-                    
+                
                 else if (boundary ..< abs(delT - corFac)).contains(abs(timeAccumulated)) {
                     playbackRepeatStopwatch(delay: 0.0, closure: { [weak self] () -> () in
                         
@@ -67,7 +67,7 @@ extension VideoVC {
                     })
                     ///earlyPlayButtonAnimate()
                 } 
-                    
+                
                 else if abs(timeAccumulated) >= abs(delT - corFac) {                                                //print("delTPaused")
                     //if !slideshowModeOn && x < (timeCount - 4) && started {animatePlayButton(0, deration: 0.2)}
                     paws()

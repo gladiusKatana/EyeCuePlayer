@@ -22,7 +22,7 @@ class RemoteControlVC: UIViewController, RemoteServiceDelegate {
             isController = false
             
             switch remoteControlString {
-                
+            
             case "tap":         videoVC.handleTap()
             case "rswipe":      videoVC.handleRightSwipe()
             case "lswipe":      videoVC.handleLeftSwipe()

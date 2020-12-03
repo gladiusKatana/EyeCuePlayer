@@ -19,7 +19,7 @@ class SettingsPanel: NSObject, UIGestureRecognizerDelegate {
         globalWindow.addSubview(backgroundView)
         backgroundView.frame = globalWindow.frame
         settingsView = SettingsView(frame: globalWindow.frame)  ///use the lazyvar above instead... or else calls its override init 2x
-    
+        
         settingsView.backgroundColor = .clear                   ///UIColor.rgb(0, green: 90, blue: 110, alpha: 0.5)
         settingsView.settingsButton.tintColor = .white
         

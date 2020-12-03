@@ -36,13 +36,13 @@ class VideoVC: UIViewController, UIGestureRecognizerDelegate {
                 self.videoPlayerView.backgroundColor = .clear //UIColor.rgb(150, green: 180, blue: 220, alpha: 0.4)
             }, completion: nil)
         } else {videoPlayerView.backgroundColor = .clear}
-
+        
         /*if calibrateMode && !started {
-            playForward()
-            times = [0.0] //[Double]()
-        }
-        justPressedSliderButton = true;  times = [Double]()
-        timingCircleAppearFromController(xCoord: 667/2, yCoord: 375 - 36, circleColor: .black)*/
+         playForward()
+         times = [0.0] //[Double]()
+         }
+         justPressedSliderButton = true;  times = [Double]()
+         timingCircleAppearFromController(xCoord: 667/2, yCoord: 375 - 36, circleColor: .black)*/
         
         //sliderController.sliderControllerShowVideoPlayer() // may trigger constraint bugs
     }

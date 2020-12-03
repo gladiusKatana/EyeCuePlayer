@@ -14,19 +14,19 @@ extension VideoVC {
         if mode == "forward" {                                                                              // Forward
             corFac = correctionFactors[0] //0 * localSpeed //0.0 //0.03 * localSpeed //-0.25 for ClipGrab
         }
-            
+        
         else if mode == "forFast" {
             corFac = correctionFactors[1] //0 * localSpeed //0.0 //-0.25 for ClipGrab(?)
         }
-            
+        
         else if mode == "reverse" {                                                                         // Reverse
             corFac = correctionFactors[2] //0.02 //0.082 //0.09
         }
-            
+        
         else if mode == "fastRev" {
             boundary = 0.0
         }
-            
+        
         else {}
     }
     

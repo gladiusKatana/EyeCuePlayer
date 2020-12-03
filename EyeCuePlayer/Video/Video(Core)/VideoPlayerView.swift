@@ -38,14 +38,14 @@ class VideoPlayerView: UIView {
         /// frameSlider.setValue(Float(times[x]/levelLength), animated: true)
         setupHorizontalBar()
         
-//        if !calibrateMode {
-//            addSubview(frameSlider)
-//            addConstraintsWithFormat("V:[v0]-4-|", views: frameSlider)         //-12-|
-//            addConstraintsWithFormat("H:|-[v0(1136)]", views: frameSlider)    //-9-|        //568  //1136  //1704
-//            addSubview(progressBar)
-//            addConstraintsWithFormat("V:[v0(3)]|", views: progressBar)
-//            addConstraintsWithFormat("H:|-0-[v0]-0-|", views: progressBar)
-//        }
+        //        if !calibrateMode {
+        //            addSubview(frameSlider)
+        //            addConstraintsWithFormat("V:[v0]-4-|", views: frameSlider)         //-12-|
+        //            addConstraintsWithFormat("H:|-[v0(1136)]", views: frameSlider)    //-9-|        //568  //1136  //1704
+        //            addSubview(progressBar)
+        //            addConstraintsWithFormat("V:[v0(3)]|", views: progressBar)
+        //            addConstraintsWithFormat("H:|-0-[v0]-0-|", views: progressBar)
+        //        }
     }
     
     required init?(coder aDecoder: NSCoder) {
