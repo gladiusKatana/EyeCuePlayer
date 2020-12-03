@@ -1,7 +1,7 @@
 // eyeCuePlayer ･ BaseCell.swift
 import UIKit
 
-class BaseCell: UICollectionViewCell {   //MARK:----------------------------- BASE CELL class -------------------------------------------
+class BaseCell: UICollectionViewCell {   ///MARK:----------------------------- BASE CELL class -------------------------------------------
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()

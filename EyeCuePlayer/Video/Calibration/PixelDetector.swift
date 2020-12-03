@@ -9,9 +9,8 @@ extension UIViewController {
         settingsPanel.settingsView.addSubview(snapshot) ///include  settingsController.  ??
         
         ///snapshot?.frame = convert(view.bounds, from: view)
-        //snapshot?.frame = CGRect(x: 0, y: 0, width: view.frame.width / 2, height: view.frame.height / 2)  //funny fractal effect
+        ///snapshot?.frame = CGRect(x: 0, y: 0, width: view.frame.width / 2, height: view.frame.height / 2)  //funny fractal effect
         //return snapshot!
-        
         imageWithView(inView: snapshot)
     }
     
@@ -23,34 +22,28 @@ extension UIViewController {
         UIGraphicsBeginImageContextWithOptions(inView.bounds.size, inView.isOpaque, 1.0)        // this was  1.0  initially
         //if let context = UIGraphicsGetCurrentContext() {  //inView.layer.render(in: context)
         inView.translatesAutoresizingMaskIntoConstraints = false
-        inView.drawHierarchy(in: inView.bounds, afterScreenUpdates: true)      //MUST be true!
+        inView.drawHierarchy(in: inView.bounds, afterScreenUpdates: true)       //MUST be true!
         
-        convertedImage = UIGraphicsGetImageFromCurrentImageContext()!          //was this an optional originally (does this matter?)
-        //UIGraphicsEndImageContext()                                          //uncomment me... and, enjoy some slips
-        
+        convertedImage = UIGraphicsGetImageFromCurrentImageContext()!
+        ///UIGraphicsEndImageContext()                                                                  //uncomment me... and, enjoy some slips in timing mechanism
         convertedImage.getPixelColor(pos: CGPoint(x: 30, y: 370))
-        //        for (xVal, yVal) in [(10, 360), (20, 360), (10, 370), (20, 370)] {
-        //            convertedImage.getPixelColor(pos: CGPoint(x: xVal, y: yVal)) }
+        //for (xVal, yVal) in [(10, 360), (20, 360), (10, 370), (20, 370)] {
+        //convertedImage.getPixelColor(pos: CGPoint(x: xVal, y: yVal)) }
     }
 }
 
 extension UIImage {
     func getPixelColor(pos: CGPoint) /*-> UIColor*/ {
-        
         let pixelData = self.cgImage!.dataProvider!.data
         let data: UnsafePointer<UInt8> = CFDataGetBytePtr(pixelData)
-        
         //        let posXInt = Int(pos.x)
         //        let posYInt = Int(pos.y) //;print("(x,y) = (\(posXInt),\(posYInt))")
-        
         let pixelInfo: Int = ((Int(self.size.width) * Int(pos.y)) + Int(pos.x)) * 4
         //dotAppearInImage(xCoord: posXInt, yCoord: posYInt, circleColor: .black)
-        
         let r = CGFloat(data[pixelInfo+2]) / CGFloat(255.0);      //print("r = \(r)")
         let g = CGFloat(data[pixelInfo+1]) / CGFloat(255.0);      //print("g = \(g)")
         let b = CGFloat(data[pixelInfo]) / CGFloat(255.0);        //print("b = \(b)")       //red and blue are switched
         //let a = CGFloat(data[pixelInfo+3]) / CGFloat(255.0);      //print("a = \(a)")
-        
         //testColour = UIColor(red: r, green: g, blue: b, alpha: a);    print("          colour = \(testColour)")
         //print("--------------------------------------------------------------------------------------------------------")
         
@@ -70,16 +63,13 @@ extension UIImage {
     }
 }
 
-
 func dotAppearInImage(xCoord: Int, yCoord: Int, circleColor: UIColor) {
     dotButton = UIButton(frame: CGRect(x: xCoord, y: yCoord, width: 1, height: 1))
     dotButton.setImage(dotButtonImage, for: UIControl.State())
     dotButton.tintColor = circleColor
-    
     dotButton.isUserInteractionEnabled = false
     videoVC.videoPlayerView.addSubview(dotButton)
 }
-
 
 /*
  //        if r == 0 && g == 0 && b == 0 {

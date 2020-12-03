@@ -80,7 +80,7 @@ extension VideoVC {
                     }
                 } else {print("! [timer range error] ! ----------------------------------------------------")}
             } //else { print("\n* interrupted = \(interrupted) & justFSeeked = \(justFSeeked)")}
-        } //else { print("\n* donePlaying = \(donePlaying) & paused = \(paused) & mode = \(mode) -------------------------------------")}
+        } ///else { print("\n* donePlaying = \(donePlaying) & paused = \(paused) & mode = \(mode) -------------------------------------")}
     }
     
     func playbackRepeatStopwatch(delay:Double, closure:()->()) {                                              // D i s p a t c h

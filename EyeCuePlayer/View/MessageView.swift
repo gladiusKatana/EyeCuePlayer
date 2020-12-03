@@ -14,11 +14,10 @@ class MessageView: UIView {
         return label
     }()
     
-    override init(frame: CGRect) {  //print("   (override init  message)")  // ! called twice
+    override init(frame: CGRect) {  //print("   (override init  message)")
         super.init(frame: frame)
         self.isUserInteractionEnabled = true
         backgroundColor = UIColor.rgb(0, green: 0, blue: 0, alpha: 0.3)
-        
         /**/
         
         AppUtility.lockOrientation(.landscape, andRotateTo: .landscapeRight)

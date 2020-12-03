@@ -9,12 +9,12 @@ extension HomeVC {
         //navigationController?.hidesBarsOnSwipe = true
         
         displayDate()
-        viewFrameHeight = Double(view.frame.height)                                             ///;  print("view frame height = \(viewFrameHeight)")
-        aspectFrameHeight = Double(view.frame.width) * 9/16                                     ///;  print("aspectFrameHeight = \(aspectFrameHeight)")
-        viewFrameWidth = Double(view.frame.width)                                               ///;  print("viewFrameWidth = \(viewFrameWidth)")
+        viewFrameHeight = Double(view.frame.height)                             ///;  print("view frame height = \(viewFrameHeight)")
+        aspectFrameHeight = Double(view.frame.width) * 9/16                     ///;  print("aspectFrameHeight = \(aspectFrameHeight)")
+        viewFrameWidth = Double(view.frame.width)                               ///;  print("viewFrameWidth = \(viewFrameWidth)")
         ///print(UIApplication.shared.statusBarFrame.height)    ///; print(self.navigationController?.navigationBar.intrinsicContentSize.height as Any)
         
-        titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 20))    //height setting doesn't seem to matter
+        titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 20))    ///height setting doesn't seem to matter
         titleLabel.text = "eyeCuePlayer"
         titleLabel.backgroundColor = UIColor.rgb(150, green: 150, blue: 180, alpha: 0.0)
         titleLabel.textColor = .white

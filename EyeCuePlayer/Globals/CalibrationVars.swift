@@ -1,5 +1,5 @@
 // eyeCuePlayer ･ CalibrationVars.swift
-import UIKit//; import AVKit
+import UIKit
 
 
 var times = [0.0, 0.0]

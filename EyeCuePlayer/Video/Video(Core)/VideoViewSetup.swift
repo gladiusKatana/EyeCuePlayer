@@ -10,7 +10,8 @@ extension VideoPlayerView {
         
         setupPlayerLayer()
         avPlayer.play()
-        playerEndReplay() ///if !viewLoaded {playerEndReplay()}
+        playerEndReplay()
+        ///if !viewLoaded {playerEndReplay()}
         playerEndNotification()
     }
     
@@ -18,16 +19,17 @@ extension VideoPlayerView {
         playerLayer = AVPlayerLayer(player: avPlayer)
         self.layer.addSublayer(playerLayer)
         playerLayer.videoGravity = AVLayerVideoGravity.resizeAspect//Fill
-        playerLayer.frame = globalWindow.frame///(UIApplication.shared.keyWindow?.frame)!
+        playerLayer.frame = globalWindow.frame ///(UIApplication.shared.keyWindow?.frame)!
     }
     
     func setupHorizontalBar() {
         let horizontalBarView = UIView()
         
         if calibrateMode {horizontalBarView.backgroundColor = .clear}
-        else {horizontalBarView.backgroundColor = .white} //uiBarsColor} //UIColor(white: 0.95, alpha: 0.9)}
+        else {horizontalBarView.backgroundColor = .white}
         
         horizontalBarView.translatesAutoresizingMaskIntoConstraints = false
+        
         if !calibrateMode {
             addSubview(horizontalBarView)
             horizontalBarLeftAnchorConstraint = horizontalBarView.leftAnchor.constraint(equalTo: self.leftAnchor)

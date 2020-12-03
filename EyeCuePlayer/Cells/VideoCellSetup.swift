@@ -11,15 +11,12 @@ extension VideoCell {
         addSubview(feedTitleLabel)
         
         addConstraintsWithFormat("V:|-0-[v0]-(-20)-[v1(20)]-0-|", views: thumbnailImageView, userProfileImageView)
-        
         addConstraintsWithFormat("H:|-0-[v0]-(-30)-[v1(20)]-|", views: thumbnailImageView, userProfileImageView)
         addConstraintsWithFormat("H:|-0-[v0]-1-|", views: feedTitleLabel)
         addConstraintsWithFormat("H:|-0-[v0]-0-|", views: titleLabel)
         
         addConstraint(NSLayoutConstraint(item: feedTitleLabel, attribute: .top, relatedBy: .equal, toItem: thumbnailImageView, attribute: .top, multiplier: 1, constant: 0))
-        
         addConstraint(NSLayoutConstraint(item: titleLabel, attribute: .top, relatedBy: .equal, toItem: thumbnailImageView, attribute: .bottom, multiplier: 1, constant: -36))
-        
         titleLabelHeightConstraint = NSLayoutConstraint(item: titleLabel, attribute: .height, relatedBy: .equal, toItem: self, attribute: .height, multiplier: 0, constant: 14)
         addConstraint(titleLabelHeightConstraint!) ///(toItem: can be self or really anything)
     }

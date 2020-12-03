@@ -11,7 +11,7 @@ class AltSettingsPanel: NSObject, UIGestureRecognizerDelegate {
         return settingsView
     }()
     
-    func showSettingsView() {                                                               //print("----------------- Settings B")
+    func showSettingsView() {                       //print("----------------- Settings B")
         justPinched = false
         
         settingsView = SettingsView(frame: globalWindow.frame)  //use the lazyvar above instead... or else calls its override init 2x
@@ -25,7 +25,7 @@ class AltSettingsPanel: NSObject, UIGestureRecognizerDelegate {
         globalWindow.addSubview(settingsView)
     }
     
-    @objc func settingsDismissPinch() {                                                                   // Pinch
+    @objc func settingsDismissPinch() {             // Pinch
         if settingsPinch.velocity > 0 {
             dismissSettingsView()
             justPinched = false

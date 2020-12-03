@@ -3,11 +3,11 @@ import UIKit;  import AVKit
 
 extension VideoCell {
     
-    func createDocumentFolderUrl(downloadUrl: URL, formatSelectorId: String) {                  ///print("format selector id = \(formatSelectorId)")
+    func createDocumentFolderUrl(downloadUrl: URL, formatSelectorId: String) {  ///print("format selector id = \(formatSelectorId)")
         let documentsUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
         let destination = documentsUrl.appendingPathComponent(downloadUrl.lastPathComponent)    // destination file url
-        ///print("appended path component: \(downloadUrl.lastPathComponent)")               ///; print("destination = \(destination)")
-        destinationString = String(describing: destination)         ///;  print("\ndestinationString = \(destinationString)")
+        ///print("appended path component: \(downloadUrl.lastPathComponent)")                           ///; print("destination = \(destination)")
+        destinationString = String(describing: destination)                     ///;  print("\ndestinationString = \(destinationString)")
         
         if FileManager().fileExists(atPath: (destination.path)) {   // check if it exists before downloading it
             let data = try? Data(contentsOf: destination)
@@ -21,9 +21,8 @@ extension VideoCell {
                 let earl = URL(fileURLWithPath: (destination.path))
                 avPlayer = AVPlayer(url: earl)
                 viewLoaded = true
-                
-                //print("▶︎ file already exists at path (\(formatSelectorId))");  tempSavedBool = true
-                //print("// destinationString:  \(destinationString)")
+                ///print("▶︎ file already exists at path (\(formatSelectorId))");  tempSavedBool = true
+                ///print("// destinationString:  \(destinationString)")
             } else {print("file selector id error")}
         } else {                                                    ///print("☐  file doesn't exist at path yet (\(formatSelectorId)) ")
             URLSession.shared.downloadTask(with: downloadUrl, completionHandler: { (location, response, error) in

@@ -18,7 +18,7 @@ extension MenuBar {
     
     func setupHorizontalBar() {
         let horizontalBarView = UIView()
-        horizontalBarView.backgroundColor = .darkGray   //icyBlue
+        horizontalBarView.backgroundColor = .darkGray
         horizontalBarView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(horizontalBarView)
         

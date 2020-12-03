@@ -6,7 +6,6 @@ extension VideoVC {
     func objectAppearAsButton(_ objectImage: UIImage, xCoord: Int, yCoord: Int, tint: UIColor, deelay: Double, deration: Double) {
         
         vidOrSlideButton = UIButton(frame: CGRect(x: xCoord, y: yCoord, width: buttonSize, height: buttonSize))
-        
         vidOrSlideButton.setImage(objectImage, for: UIControl.State())
         vidOrSlideButton.isUserInteractionEnabled = false
         vidOrSlideButton.tintColor = .clear

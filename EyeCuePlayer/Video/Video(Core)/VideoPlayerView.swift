@@ -9,8 +9,8 @@ class VideoPlayerView: UIView {
         let slider = UISlider()
         //slider.setThumbImage(tallSliderImage, for: .normal)
         slider.thumbTintColor = UIColor.rgb(0, green: 0, blue: 0, alpha: 0.5) //(220, green: 100, blue: 85, alpha: 0.2)
-        slider.minimumTrackTintColor = .clear     //clear
-        slider.maximumTrackTintColor = .clear   //UIColor.rgb(250, green: 80, blue: 13, alpha: 0.1)
+        slider.minimumTrackTintColor = .clear
+        slider.maximumTrackTintColor = .clear
         slider.addTarget(self, action: #selector(slideToSeek(_:)), for: .valueChanged)
         slider.isUserInteractionEnabled = true
         slider.translatesAutoresizingMaskIntoConstraints = false
@@ -20,7 +20,7 @@ class VideoPlayerView: UIView {
     var progressBar: UIProgressView = {
         let bar = UIProgressView()
         bar.trackTintColor = UIColor.lightGray
-        bar.progressTintColor = UIColor.rgb(83, green: 88, blue: 95, alpha: 0.7)//.darkGray//(100, green: 100, blue: 220, alpha: 0.99)
+        bar.progressTintColor = UIColor.rgb(83, green: 88, blue: 95, alpha: 0.7)
         return bar
     }()
     
@@ -32,11 +32,11 @@ class VideoPlayerView: UIView {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             self.addPlayorToView(link: selectedVideoLink)    ///setupHardPlayer() * * *
         }
+        
         avPlayer.seek(to: CMTime(seconds: 0, preferredTimescale: 100), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
         frameSlider.addTarget(self, action: #selector(slideToSeek(_:)), for: .valueChanged)
         /// frameSlider.setValue(Float(times[x]/levelLength), animated: true)
         setupHorizontalBar()
-        
         
 //        if !calibrateMode {
 //            addSubview(frameSlider)

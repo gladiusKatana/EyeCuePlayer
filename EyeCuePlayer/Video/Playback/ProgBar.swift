@@ -8,13 +8,10 @@ extension VideoVC {
         if ecks < timeCount {
             videoPlayerView.progressBar.progress = Float (times[ecks]) / Float(levelLength)
             
-            
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.001) {           ///print("progress set after slider")
-                
                 
                 //                if justSetSliderBackOnce {loopT = 0.95 * sliderScaleFactor / levelLength;  print("OKOKOK")}
                 //                else {loopT = 0}
-                
                 
                 if justSwiped {ecks = ecks - 1}
                 
@@ -23,12 +20,10 @@ extension VideoVC {
                     //print("error related to setting the slider back ONCE")
                 }
                 
-                
                 //                else {
                 //                self.videoPlayerView.frameSlider.setValue(Float((times[x] - maxedOutPosition) * sliderScaleFactor / levelLength), animated: true)
                 ////                    self.videoPlayerView.frameSlider.setValue(Float(0.5), animated: true)
                 //                }
-                
             }
             
             //            }

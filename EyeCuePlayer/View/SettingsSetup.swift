@@ -4,21 +4,19 @@ import UIKit
 extension SettingsView {
     
     func settingsViewSetup() {
-        backgroundColor = .orange   //UIColor.rgb(0, green: 0, blue: 0, alpha: 0.3)
-        //print("viewFrameHeight = \(viewFrameHeight)")
+        backgroundColor = .orange       //; print("viewFrameHeight = \(viewFrameHeight)")
         justPinched = false
         
         if viewFrameHeight == 667 {
             settingsButton = UIButton(frame: CGRect(x: 615, y: 2, width: 40, height: 40))
-        }
-        else if viewFrameHeight == 768 {
+        } else if viewFrameHeight == 768 {
             settingsButton = UIButton(frame: CGRect(x: 972, y: 8, width: 40, height: 40))
         } else {print ("settingsButton size error")}
         
         let image = UIImage(named: "settingsButton")?.withRenderingMode(.alwaysTemplate)
         settingsButton.setImage(image, for: UIControl.State())
         addSubview(settingsButton)
-        //settingsButton.addTarget(self, action: #selector(handleSettingsDismiss), for: UIControlEvents.touchUpInside)
+        ///settingsButton.addTarget(self, action: #selector(handleSettingsDismiss), for: UIControlEvents.touchUpInside)
         
         addSubview(musicSwitch)
         addSubview(slideshowModeSwitch)

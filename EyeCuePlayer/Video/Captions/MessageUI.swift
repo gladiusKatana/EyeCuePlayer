@@ -35,7 +35,7 @@ extension MessageVC {
     
     func handleMessageDismiss() {  ///print("handle MessageDismiss")
         latch = false
-        messageView.removeFromSuperview()       //need self. ? I think not
+        messageView.removeFromSuperview()
         actualDescription = false
     }
     

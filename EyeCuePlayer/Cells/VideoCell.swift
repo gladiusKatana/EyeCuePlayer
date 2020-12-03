@@ -16,7 +16,7 @@ class VideoCell: BaseCell {
                 titleLabel.text = titleText
                 feedTitleLabel.text = channelName
                 
-                let size = CGSize(width: frame.width - 16 - 44 - 8 - 16, height: 1000)  //seems like height can be anything
+                let size = CGSize(width: frame.width - 16 - 44 - 8 - 16, height: 1000)  //looks like height can be anything
                 
                 let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
                 let estimatedRect = NSString(string: titleText).boundingRect(with: size, options: options, attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.font): UIFont.systemFont(ofSize: 6)]), context: nil)

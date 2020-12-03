@@ -7,7 +7,7 @@ class ApiService: NSObject {
     
     let baseUrl = "https://s3.ca-central-1.amazonaws.com/eye.cue.player"
     
-    func fetchFeedZero(_ completion: @escaping ([Video]) -> ()) {                           ///need these wrapper functions fetchFeed(N) bc. called as a closure
+    func fetchFeedZero(_ completion: @escaping ([Video]) -> ()) {
         fetchFeedForUrlString(urlString: "\(baseUrl)/maths.json", completion: completion)
     }
     
@@ -63,7 +63,7 @@ func fetchFeedForUrlString(urlString: String, completion: @escaping ([Video]) ->
                             channel.name = channelDictionary["name"] as? String
                             channel.profile_image_name = channelDictionary["profile_image_name"] as? String
                             
-                            video.channel = channel                                     //; print("json map video: \(video.title ?? "")")
+                            video.channel = channel       //; print("json map video: \(video.title ?? "")")
                             
                             return video
                         }

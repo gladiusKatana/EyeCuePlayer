@@ -12,7 +12,7 @@ class MenuBar: UIView, UICollectionViewDataSource, UICollectionViewDelegate, UIC
         return cv
     }()
     
-    let cellId = "cellId";              let imageNames = ["account", "home"]
+    let cellId = "cellId"; let imageNames = ["account", "home"]
     var homeVC: HomeVC?
     
     override init(frame: CGRect) {

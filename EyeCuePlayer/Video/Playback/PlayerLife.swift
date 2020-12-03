@@ -13,7 +13,6 @@ extension VideoPlayerView {
         } else {print("could not downcast temp video url")}
         
         setupPlayerLayer()  ///; playerEndNotification()
-        
         /*(hardcoding times-array: see below)*/
         
         if calibrateMode {
@@ -32,7 +31,7 @@ extension VideoPlayerView {
         NotificationCenter.default.addObserver(self, selector: #selector(VideoPlayerView.itemDidFinishPlayingAndWillReplay(_:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: avPlayer.currentItem)
     }
     
-    @objc func itemDidFinishPlaying(_ notification: Notification) {                 //print("-------------------------- done playing")
+    @objc func itemDidFinishPlaying(_ notification: Notification) {         //print("-------------------------- done playing")
     }
     
     @objc func itemDidFinishPlayingAndWillReplay(_ notification: Notification) {

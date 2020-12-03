@@ -3,8 +3,8 @@ import UIKit; import AVKit
 
 extension VideoVC {
     
-    func latchKey() {                                                           //print("latched")
-        if !justInterrupted {   //*watch that  justInterrupted  = false
+    func latchKey() {                       //print("latched")
+        if !justInterrupted {
             playSound(trackTitle: "Funk")
         }
         else {latch = false}

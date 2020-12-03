@@ -6,13 +6,10 @@ extension VideoVC {
     @objc func handleLeftSwipe() {
         
         if isController {remoteControlVC.remoteService.send(controlName: "lswipe")}
-        
         //if Int((leftSwipe.location(in: videoPlayerView)).y) < maxGestureYValue {
         
         if ecks < timeCount - 2 && !downPaused {
-            
             if !slideshowModeOn {
-                
                 if !justFSwiped {
                     if localSpeed >= 0 {
                         justFSwiped = true;  justTapped = false
@@ -25,14 +22,12 @@ extension VideoVC {
                         }
                     } else{latchKey(); print("<leftSwipe> latch error")}
                 }
-                    
                 else {
                     fSeeks = fSeeks + 1                         //; print("fSeek \(fSeeks)   ", terminator:"");  pryntPlayback(pageKey: 0)
                     //playButtonAppear()
                     paws();  justFSeeked = true
                     seek(framesAhead: 0)
                 }
-                
             } else {
                 if !started { started = true}
                 paws()

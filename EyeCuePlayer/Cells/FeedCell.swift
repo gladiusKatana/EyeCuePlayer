@@ -7,7 +7,8 @@ class CalibrateButton: UIButton {
     var cellIndex: Int = 0
 }
 
-class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout { //MARK: FEEDCELL
+//MARK: FEEDCELL
+class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -19,24 +20,21 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
         return cv
     }()
     
-    var videos: [Video]?            //; print("\(videos.count) videos")
+    var videos: [Video]?                    //; print("\(videos.count) videos")
     let cellId = "cellId"
     
-    override func setupViews() {    //print("setting up views")
+    override func setupViews() {            //print("setting up views")
         super.setupViews()
-        getFeed()
-        ///print("there are \(String(describing: videos?.count)) videos in this feed") //prints "there are nil videos in this feed"
-        
+        getFeed() ///; print("there are \(String(describing: videos?.count)) videos in this feed") //prints "there are nil videos in this feed"
         addSubview(collectionView)
-        addConstraintsWithFormat("H:|-25-[v0]-25-|", views: collectionView)         //nonzero -#- doesn't seem to make a difference
-        addConstraintsWithFormat("V:|-50-[v0]-|", views: collectionView)            //200+58+59+58 = 375
-        
+        addConstraintsWithFormat("H:|-25-[v0]-25-|", views: collectionView) ///nonzero -#- doesn't seem to make a difference
+        addConstraintsWithFormat("V:|-50-[v0]-|", views: collectionView)    //200+58+59+58 = 375
         collectionView.register(VideoCell.self, forCellWithReuseIdentifier: cellId)
     }
     
-    func getFeed() {                  /// was called fetchVideos()  (ie, use that again for overall feed of all videos;  "filtered api calls")
-        ApiService.sharedInstance.fetchFeedZero { (videos: [Video]) in                           /// better description might be "closure api calls?"
-            self.videos = videos                    //; print("cell zero has \(self.videos!.count) videos")
+    func getFeed() {                        /// was called fetchVideos()  (ie, use that again for overall feed of all videos;  "filtered api calls")
+        ApiService.sharedInstance.fetchFeedZero { (videos: [Video]) in  /// better description might be "closure api calls?"
+            self.videos = videos            //; print("cell zero has \(self.videos!.count) videos")
             //self.videos = globalVideos
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
@@ -47,8 +45,7 @@ class FeedCell: BaseCell, UICollectionViewDataSource, UICollectionViewDelegate, 
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         ///print("there are \(String(describing: videos?.count)) videos in this feed")      //prints with "nil" too I think
-        return videos?.count ?? 0
-        //return 1//videos?.count ?? 0
+        return videos?.count ?? 0 //return 1//videos?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,

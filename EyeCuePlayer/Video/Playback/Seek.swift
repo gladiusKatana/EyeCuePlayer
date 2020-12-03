@@ -3,7 +3,7 @@ import UIKit;  import AVKit
 
 extension VideoVC {
     
-    func seek(framesAhead: Int) {                                           //print("seeked")
+    func seek(framesAhead: Int) {                   //print("seeked")
         
         if ecks < timeCount {
             

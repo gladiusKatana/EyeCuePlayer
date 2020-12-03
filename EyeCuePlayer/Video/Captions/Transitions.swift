@@ -4,9 +4,8 @@ import UIKit
 extension MessageVC {
     
     func messageTransitionOn(vu: MessageView, durationSetting: Double) {
-        let xOffset = 20
         vu.messageLabel.textColor = .clear
-        ///let options = vu.options
+        let xOffset = 20    /// ; let options = vu.options
         
         MessageView.transition(with: messageView, duration: durationSetting, options: .curveEaseIn, animations: {
             vu.messageLabel.textColor = UIColor.rgb(152, green: 83, blue: 13, alpha: 1)
@@ -37,10 +36,9 @@ extension MessageVC {
         }, completion: nil)
     }
     
-    func messageTransitionOff(durationSetting: Double) {   //print("message transitions off")               //* something (was) not working here
+    func messageTransitionOff(durationSetting: Double) { ///print("message transitions off")    //* something (was) not working here
         MessageView.transition(with: messageView, duration: durationSetting, options: .transitionCrossDissolve, animations: {
-            messageView.messageLabel.textColor = .clear //need self. if messageView not global
-            ///messageView.backgroundColor = .clear     //works ??
+            messageView.messageLabel.textColor = .clear /// ; messageView.backgroundColor = .clear
         }, completion: nil)
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + durationSetting * 1.1 ) {

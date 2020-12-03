@@ -42,6 +42,5 @@ extension VideoVC {
             print("this is the playa error: \(error.description)")
         }
     }
-    
 }
 

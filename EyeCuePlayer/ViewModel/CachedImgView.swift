@@ -1,7 +1,7 @@
 // eyeCuePlayer ･ CacheableImgView.swift
 import UIKit
 
-let imageCache = NSCache<AnyObject, AnyObject>()          //Not an extension (?)
+let imageCache = NSCache<AnyObject, AnyObject>()
 
 class CachedImgView: UIImageView {
     

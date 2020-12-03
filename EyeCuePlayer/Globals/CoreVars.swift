@@ -1,5 +1,5 @@
 // eyeCuePlayer ･ CoreVars.swift
-import UIKit//;   import AVKit
+import UIKit
 
 
 var globalWindow = UIWindow(frame: UIScreen.main.bounds)

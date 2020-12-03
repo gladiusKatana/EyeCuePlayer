@@ -5,7 +5,7 @@ extension HomeVC {
     
     func scrollToMenuIndex(_ menuIndex: Int) {
         let indexPath = IndexPath(item: menuIndex, section: 0)
-        collectionView?.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition(), animated: true)           // * * *
+        collectionView?.scrollToItem(at: indexPath, at: UICollectionView.ScrollPosition(), animated: true)  // * * *
         setTitleForIndex(menuIndex)
     }
     

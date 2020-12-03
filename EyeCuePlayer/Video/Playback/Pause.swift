@@ -6,7 +6,7 @@ extension VideoVC {
     func paws() {       mode = "paused"  //;  print("paws")             // ⏸ Pause
         
         if !isController {
-            isController = true // only when current video-clip is done playing is control interchangeable between devices running this app
+            isController = true /// only when current video-clip is done playing is control interchangeable between devices running this app
         }
         
         //let timeToPause = DispatchTime.now();  DispatchQueue.main.asyncAfter(deadline: timeToPause) {playor.pause()}
@@ -29,9 +29,8 @@ extension VideoVC {
         //if printAnomalousDiffValue {print("(paws) diff = \(diff)")}
         
         updateProgressBar()                  //if slydInCurrentTimeInterval {x = x - 1}
-        
         descriptionT = 0.0
-//        timeAccumulatedForSlider = 0.0
+        //timeAccumulatedForSlider = 0.0
         localSpeed = 0.0;           bubble = 0
         justSlid = false;           playButtonOn = false
         

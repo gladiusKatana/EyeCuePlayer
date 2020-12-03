@@ -1,13 +1,13 @@
 // eyeCuePlayer ･ PlayForward.swift
 import UIKit;  import AVKit
 
-extension VideoVC {                             //* verify whether justSlid  is  deprecated in this codebase
+extension VideoVC {
     func playForward(){                                                 //print("<< playing forward")
         //newPlayButton.removeFromSuperview()
         dismissPlayButton(0, deration: 0.5)
         
         if !started {   started = true
-            ///if musicOn {playTrack(trackTitle: "interloper")}    /// removed file as it was 108MB, GitHub size limit for individual files is 100MB, recommended size 50MB
+            ///if musicOn {playTrack(trackTitle: "interloper")} /// removed file as it was 108MB, GitHub size limit for individual files is 100MB, recommended size 50MB
         }
         
         if justFSeeked {justFSeeked = false}

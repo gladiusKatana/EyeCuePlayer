@@ -7,14 +7,14 @@ class SliderView: UIView {
         let slider = UISlider()
         slider.thumbTintColor = UIColor.rgb(0, green: 0, blue: 0, alpha: 0.2) 
         slider.minimumTrackTintColor = UIColor.darkGray
-        slider.maximumTrackTintColor = UIColor.lightGray //rgb(83, green: 88, blue: 95, alpha: 0.7)//(100, green: 100, blue: 220,...)
+        slider.maximumTrackTintColor = UIColor.lightGray
         slider.addTarget(self, action: #selector(slideCalibrate(_:)), for: .valueChanged)
         slider.isUserInteractionEnabled = true
         slider.translatesAutoresizingMaskIntoConstraints = false
         return slider
     }()
     
-    override init(frame: CGRect) { //print("\n  (override init slider)")                                              // ! called twice
+    override init(frame: CGRect) { ///print("\n  (override init slider)")                                              // ! called twice
         super.init(frame: frame)
         calibrationSlider.addTarget(self, action: #selector(slideCalibrate(_:)), for: .valueChanged)
         
@@ -33,12 +33,12 @@ class SliderView: UIView {
         }
     }
     
-    /**/
-    
     required init?(coder aDecoder: NSCoder) {fatalError("init(coder:) has not been implemented")}
 }
 
-/*func setupSliderPlayer(link: String) {                                                   //?? Seems to get called twice...  or does it??
+/*
+ extension SliderView {
+ func setupSliderPlayer(link: String) {                                                   //?? Seems to get called twice...  or does it??
     if let url = URL(string: selectedVideoLink) {   //was NSURL(string: selected Video Link) without the spaces lol
         playor = AVPlayer(url: url as URL)
         let tempVideoCell = VideoCell()
@@ -57,5 +57,7 @@ class SliderView: UIView {
         playerLayer.frame = sliderViewFrame
     }
     timeCount = times.count;  timeCountMinusOne = timeCount - 1       //;  print("timeCount = \(timeCount)")
-}*/
+}
+ }
+ */
 

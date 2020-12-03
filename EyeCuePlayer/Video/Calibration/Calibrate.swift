@@ -1,7 +1,7 @@
 // eyeCuePlayer ･ SlideCalibrate.swift
 import UIKit
 
-extension SliderController {    // check this is extending the right class
+extension SliderController {
     
     @objc func calibrationTap() {
         times.append(position)
@@ -26,9 +26,7 @@ extension SliderController {    // check this is extending the right class
                 times = [0.0, 0.0, 0.0]
                 print("pause times: \(times)")
                 
-            } else {
-                times.append(0.0);  print("pause times array is now: \(times)")
-            }
+            } else {times.append(0.0);  print("pause times array is now: \(times)")}
             
             justPinched = true;  justPressedSliderButton = false
             position = 0

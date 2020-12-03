@@ -7,7 +7,7 @@ extension VideoVC {
     func pryntPlayback(pageKey k: Int) {
         //        let timeAccd = String(format: "%.5f", timeAccumulated)
         
-        //            print("\nx = \(x)   time: ", terminator: "")                                    //... for testing in central mode
+        //            print("\nx = \(x)   time: ", terminator: "")
         //            print(String(format: "%.3f", times[x]), terminator: "")
         //            print("   timeD: ", terminator: "")
         //            print(String(format: "%.5f", timeD[x]), terminator: "")
@@ -17,7 +17,7 @@ extension VideoVC {
     }
     
     
-    func hourglass() {                                                          //print(".")
+    func hourglass() {                                                                  //print(".")
         if mode == "forward" || mode == "forFast" {         print(".", terminator:"")}
         else if mode == "reverse" || mode == "fastRev" {    print("'", terminator:"")}
         else if mode ==  "paused" {                         print("|", terminator: "")}

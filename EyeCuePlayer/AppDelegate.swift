@@ -1,10 +1,10 @@
 // eyeCuePlayer ･ AppDelegate.swift
-import UIKit;  import CoreData              //; var statusBar = UIView()
+import UIKit;  import CoreData
 
 @UIApplicationMain class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    lazy var orientationLock = UIInterfaceOrientationMask.all           /// set orientations you want to be allowed in this property by default
+    lazy var orientationLock = UIInterfaceOrientationMask.all   /// set orientations you want to be allowed in this property by default
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         return orientationLock
@@ -21,7 +21,7 @@ import UIKit;  import CoreData              //; var statusBar = UIView()
             statusBarUIView!.backgroundColor = .clear
         }
         
-        UINavigationBar.appearance().barTintColor = icyBlue //.white //defaultColour //uiBarsColor
+        UINavigationBar.appearance().barTintColor = icyBlue
         UINavigationBar.appearance().shadowImage = UIImage()
         
         return true

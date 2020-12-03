@@ -37,8 +37,9 @@ extension VideoVC {
                     playbackTimer(localT: 1.0)  //; print("called playbackTimer reverse")
                 }
             }
-            else {  mode = "fastRev";   selectCorrectionFactor()
-                
+            else {
+                mode = "fastRev"
+                selectCorrectionFactor()
                 latch = true
                 avPlayer.play()
                 localSpeed = -1.9;  avPlayer.rate = Float(localSpeed)

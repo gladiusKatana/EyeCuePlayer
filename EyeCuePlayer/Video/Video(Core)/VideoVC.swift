@@ -3,7 +3,7 @@ import UIKit;  import CoreMedia // VC stands for ViewController, of course
 
 class VideoVC: UIViewController, UIGestureRecognizerDelegate {
     
-    lazy var videoPlayerView: VideoPlayerView = {        //try deleting / putting back 'lazy' & see what happens
+    lazy var videoPlayerView: VideoPlayerView = {   //try deleting / putting back 'lazy' & see what happens
         let videoPlayerView = VideoPlayerView()
         return videoPlayerView
     }()
@@ -26,9 +26,9 @@ class VideoVC: UIViewController, UIGestureRecognizerDelegate {
         AppUtility.lockOrientation(.landscape, andRotateTo: .landscapeRight)
         
         setupVideoGestures()
-        
         backgroundView.addSubview(remoteControlVC.view)
         backgroundView.addSubview(videoPlayerView)
+        
         if autoDescriptionsOn /*|| x == 0*/ {messageController.showMessageView()}
         
         if viewFrameHeight == 768 {
@@ -55,7 +55,6 @@ class VideoVC: UIViewController, UIGestureRecognizerDelegate {
         backgroundView.removeGestureRecognizer(tapG)
         backgroundView.removeGestureRecognizer(pinchMe)
         //newPlayButton.removeFromSuperview()
-        
         backgroundView.removeFromSuperview()
         videoPlayerView.removeFromSuperview()
         videoPlayerView.frameSlider.removeFromSuperview()

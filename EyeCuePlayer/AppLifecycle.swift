@@ -4,7 +4,8 @@ import UIKit
 extension AppDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) {     //print("interupted = \(interupted)")
         
-        if started {                                                     ///print("---------------------------------------------...and on become-active (mode is \(mode))")
+        if started { ///print("---------------------------------------------...and on become-active (mode is \(mode))")
+            
             //if !actualDescription{
             messageController.handleMessageDismiss()
             //}
@@ -45,7 +46,7 @@ extension AppDelegate {
         }
     }
     
-    func applicationWillResignActive(_ application: UIApplication) {  //print("--------------- willResignActive", terminator: "")
+    func applicationWillResignActive(_ application: UIApplication) {  ///print("--------------- willResignActive", terminator: "")
         avPlayer.pause()
         ////paused = true
         

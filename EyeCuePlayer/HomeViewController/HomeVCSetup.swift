@@ -9,7 +9,6 @@ extension HomeVC {
             flowLayout.minimumLineSpacing = 0
         }
         collectionView?.backgroundColor = icyBlue   //collectionView?.isPagingEnabled = true
-        
         collectionView?.register(FeedCell.self, forCellWithReuseIdentifier: cellIdZero)
         collectionView?.register(CellOne.self, forCellWithReuseIdentifier: cellIdOne)
         collectionView?.register(CellTwo.self, forCellWithReuseIdentifier: cellIdTwo)
@@ -36,7 +35,6 @@ extension HomeVC {
         let originalPlusImage = UIImage(named: "+forMenuBar")?.withRenderingMode(.alwaysTemplate)
         let uploadButton = UIBarButtonItem(image: originalPlusImage, landscapeImagePhone: originalPlusImage, style: .plain, target: self, action: #selector(selectImageTurnedOffMessage))
         uploadButton.tintColor = UIColor.rgb(152, green: 83, blue: 13, alpha: 1) //.orange //91/14/13
-        
         navigationItem.rightBarButtonItems = [uploadButton, settingsButton, anothersettingsButton/*, uploadButton*/]
     }
     

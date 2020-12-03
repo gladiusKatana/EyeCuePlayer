@@ -4,7 +4,7 @@ import UIKit; import AVKit
 extension VideoPlayerView {
     
     @objc func slideToSeek(_ sender: UISlider) {
-        if !justSlid {                          print("\nS l i d i n g ------------------------------------------------")
+        if !justSlid {                              print("\nS l i d i n g ------------------------------------------------")
             justSlid = true
             avPlayer.seek(to: CMTime(seconds: times[ecks], preferredTimescale: 600), toleranceBefore: CMTime.zero, toleranceAfter: CMTime.zero)
         }
@@ -19,7 +19,6 @@ extension VideoPlayerView {
         
         if !justPressedSliderButton {
             ///if !justSetSliderBackOnce {
-            
             for t in times {
                 if ((position) ..< (position + 0.4)).contains(t) {
                     ecks = times.firstIndex(of: t)!                                        //; print("x = \(x)")
@@ -34,10 +33,9 @@ extension VideoPlayerView {
             delT = times[ecks] - position
             ///}
             //if sender.value > 0.8 * Float(viewFrameHeight) / sliderLength {print("maxxed out slider")}
-            
             //if (0.301 ..< 0.303).contains(sender.value) {
             if sender.value >= 0.45 {
-                frameSlider.removeFromSuperview()                       ; print("----------------------------------------maxxed out slider")
+                frameSlider.removeFromSuperview()   ; print("----------------------------------------maxxed out slider")
                 ///frameSlider.addTarget(self, action: #selector(dragSliderVpV(_:)), for: .valueChanged)
                 
                 if !calibrateMode {
